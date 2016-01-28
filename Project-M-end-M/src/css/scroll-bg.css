@@ -1,22 +1,5 @@
 body{padding:0;margin:0;}
 
-/*
-.environment {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    -webkit-perspective: 800px;
-    -moz-perspective: 800px;
-    perspective: 800px;
-}
-
-.content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-*/
-
 .bg-container {
     position:fixed;
     top:0; bottom: 0; left: 0; right: 0;
@@ -24,11 +7,38 @@ body{padding:0;margin:0;}
     width:100%;
     padding-top:50%;
     background: url(../img/bg-1.jpg) center center no-repeat;
-    transform:scale(1);
+    transform: scale(1);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.bg-container.animate-start{
+    animation:4s start;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+}  @keyframes start{
+       0%{
+           transform: scale(1,1);
+       }
+       100%{
+        transform: scale(2,2);
+       }
+}
+
+.bg-container.animate-end {
+    animation: 4s end;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}  @keyframes end{
+       0%{
+           transform: scale(2,2);
+       }
+       100%{
+           transform: scale(1,1);
+       }
 }
 
 .icon-title-start {

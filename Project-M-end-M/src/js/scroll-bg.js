@@ -11,19 +11,16 @@ $(window).scroll(function(e) {
     }
 
     var buyutme = (scrollSeviye/10000)+1;
-    //var bayutme2 = $(this).scrollTop / ($(window).height - $(document).height);
 
-    //$('.arkaplan').css('-webkit-filter', 'blur('+500/scrollSeviye+'px)');
     $('.bg-container').css('-webkit-filter', 'blur('+scrollSeviye/1200+'px)');
-
-    $('.bg-container').css('-ms-filter', 'blur('+scrollSeviye/1200+'px)');
-    $('.bg-container').css('transform', 'scale('+buyutme+')');
 });
 
 //Эфент нажатия на иконку (первую)
 $(function() {
     $('#iconStart').click(function (e) {
         $.scrollTo('#endPage', 4000);
+        $('.bg-container').removeClass('animate-end');
+        $('.bg-container').addClass('animate-start');
     });
 });
 
@@ -31,5 +28,7 @@ $(function() {
 $(function() {
     $('#iconEnd').click(function (e) {
         $.scrollTo('#startPage', 4000);
+        $('.bg-container').removeClass('animate-start');
+        $('.bg-container').addClass('animate-end');
     });
 });
