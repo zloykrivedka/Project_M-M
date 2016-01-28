@@ -2,6 +2,17 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Project M&M" />
+    <meta name="description" content="Vladimir's very first and ver own project." />
+    <link rel="image_src" href="http://mysite.com/mypic.jpg" />
+
+    <meta property="og:url"           content="http://project-m.com" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Project M" />
+    <meta property="og:description"   content="Very own and personal site" />
+    <meta property="og:image"         content="http://www.project-m.com/path/image.jpg" />
+
     <title></title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -18,14 +29,23 @@
  + размытие фона-->
     <script src="js/scroll-bg.js"></script>
 
+    <!--ВКашечка-->
+    <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
+    <script type="text/javascript" src="js/facebook-share.js" charset="windows-1251"></script>
+    <script type="text/javascript" src="js/twitter-share.js" charset="windows-1251"></script>
 </head>
 <body>
 
 <!--Контайнер для фона-->
+<<<<<<< HEAD
 <div class="bg-container" class="animate-start animate-end" id="bg">
 <canvas>
+=======
+<div class="bg-container">
+    <canvas>
+>>>>>>> origin/master
 
-</canvas>
+    </canvas>
 </div>
 
 <!--Верхнее вемю-->
@@ -45,6 +65,29 @@
                 <li class="active"><a href="#home" id="home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav" style="horizontal-align: right;">
+                <li>
+                    <script type="text/javascript">
+                        document.write(VK.Share.button({
+                                    url: 'http://localhost:1220/Project_M-M/Project-M-end-M/src/index.html',
+                                    title: 'Project M&M',
+                                    description: 'Little small description...',
+                                    image: 'http://mysite.com/mypic.jpg',
+                                    noparse: 'true',
+                                },
+                                {
+                                    type: 'custom',
+                                    text: 'VK',
+                                }));
+                    </script>
+                </li>
+                <li>
+                    <a href="https://twitter.com/intent/tweet?text=Look at our project!&amp;url=http://project-m.com&amp;hashtags=ProjectM,loveme">Tweeter</a>
+                </li>
+                <li>
+                    <a href="" onclick="FBShare()">Facebook</a>
+                </li>
             </ul>
         </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
