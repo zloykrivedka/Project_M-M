@@ -4,10 +4,9 @@ body{padding:0;margin:0;}
     position:fixed;
     top:0; bottom: 0; left: 0; right: 0;
     z-index:0;
-    width:100%;
+    width: 100%;
     padding-top:50%;
-    background: url(../img/bg-1.jpg) center center no-repeat;
-    transform: scale(1);
+    background: url(../img/bg-2.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -15,35 +14,34 @@ body{padding:0;margin:0;}
 }
 
 .bg-container.animate-start{
-    animation:4s start;
+    animation: 2000ms start ;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 
 }  @keyframes start{
        0%{
-           transform: scale(1,1);
+           transform: scale(1);
        }
        100%{
-        transform: scale(2,2);
+           transform: scale(1.5);
        }
 }
 
 .bg-container.animate-end {
-    animation: 4s end;
+    animation: 500ms end;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }  @keyframes end{
        0%{
-           transform: scale(2,2);
+           transform: scale(1.5);
        }
        100%{
-           transform: scale(1,1);
+           transform: scale(1);
        }
 }
 
 .icon-title-start {
-    position: absolute;
-    z-index: 3;
+    margin-top: 15%;
     width: auto;
     height: 40px;
     top: 22%; left: 0; bottom: 0; right: 0;
@@ -52,11 +50,9 @@ body{padding:0;margin:0;}
 }
 
 .icon-title-back{
-    position: absolute;
-    z-index: 3;
     width: auto;
     height: 40px;
-    left: 0; bottom: 27%; right: 0;
+    margin-top: 15%;
     color: #ffffff;
     font-size: 150%;
 }
@@ -65,45 +61,38 @@ body{padding:0;margin:0;}
     position:absolute;
     /*background-color:rgba(255,255,255,1);*/
     z-index: 3;
-    height: 6000px;
     left:0;
     right:0;
     top:0;
     margin-left:auto;
     margin-right:auto;
     width:100%;
-    padding: 5%;
 }
-
 
 .icon-container{
     position:absolute;
     /*background-color:rgba(255,255,255,1);*/
     z-index: 4;
-    height: 600px;
     left:0; right:0; top:0;
     margin-left:auto;
     margin-right:auto;
-    width:50%;
+    width:100%;
 }
 
 .icon-container-end-page{
     position:absolute;
     /*background-color:rgba(255,255,255,1);*/
     z-index: 4;
-    height: 600px;
     left:0; right:0; bottom: 0;
     margin-left:auto;
     margin-right:auto;
-    width:50%;
+    width:100%;
 }
 
 .end-page-container {
-
+    top: 5%;
     left:0;
     right:0;
-    bottom: 0;
-    top: 0;
 }
 
 .content-container h1{
