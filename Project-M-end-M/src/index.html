@@ -33,6 +33,7 @@
     <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
     <script type="text/javascript" src="js/facebook-share.js" charset="windows-1251"></script>
     <script type="text/javascript" src="js/twitter-share.js" charset="windows-1251"></script>
+    <script type="text/javascript" src="js/pop.js" charset="windows-1251"></script>
 </head>
 <body>
 
@@ -87,6 +88,31 @@
                 </li>
                 <li>
                     <a href="" onclick="FBShare()">Facebook</a>
+                </li>
+                <li>
+                    <script>
+                        $(document).ready(function(){
+                            //Скрыть PopUp при загрузке страницы
+                            PopUpHide();
+                        });
+                        //Функция отображения PopUp
+                        function PopUpShow(){
+                            $("#popup1").show();
+                        }
+                        //Функция скрытия PopUp
+                        function PopUpHide(){
+                            $("#popup1").hide();
+                        }
+                    </script>
+
+                    <a href="javascript:PopUpShow()">Map</a>
+                    <div class="b-popup" id="popup1">
+                        <div class="b-popup-content">
+                            <img class="close" onclick="javascript:PopUpHide()" src="img/krest.png">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d587.6624628810044!2d27.55225458703317!3d53.90242722501901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1454186758056" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                        </div>
+                    </div>
                 </li>
             </ul>
         </div><!-- /.nav-collapse -->
