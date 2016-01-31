@@ -33,9 +33,8 @@
 .icon-social-container{
     position: fixed;
     right: 0; bottom: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    width: 200px;
+    margin: 10px 10px 10px 10px;
+    width: auto;
 }
 
 .end-page-container {
@@ -51,4 +50,12 @@
 
 .content-container p{
     color: #ffffff;
+}
+
+/*Bootstratp adds*/
+.navbar-fixed-top-right,
+.navbar-fixed-bottom-right {
+    position: fixed;
+    right: 0;
+    z-index: 1030;
 }

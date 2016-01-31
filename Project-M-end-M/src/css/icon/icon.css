@@ -35,8 +35,10 @@ inset 0 0 0 15px   rgba(255,255,155,.4);
 
 .icon-social{
     left: 0; right: 0; bottom: 0;
+    margin: 3px 3px 3px 3px;
     height: 60px;
     width: 60px;
+    cursor: pointer;
 }
 
 

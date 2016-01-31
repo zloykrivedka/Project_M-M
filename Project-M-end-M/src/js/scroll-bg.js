@@ -106,3 +106,4 @@ function goStart(){
     $('#iconEnd').addClass('hide-central');
     $.scrollTo('#startPage', 500);
 }
+
