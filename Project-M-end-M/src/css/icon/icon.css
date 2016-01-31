@@ -1,7 +1,7 @@
 body {background-color: #000000;}
 
 .icon{
-    position: absolute;
+    position: fixed;
     width: 180px;
     height: 180px;
     background: url(../../img/icon1.png) no-repeat;
@@ -63,5 +63,5 @@ inset 0 0 0 15px   rgba(255,255,155,.4);
 
 }
 .icon-bottom-right{
-    
+
 }
