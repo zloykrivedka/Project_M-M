@@ -18,16 +18,11 @@
     pointer-events: auto;
 }
 .modalDialog{
-    position: fixed;
     margin: auto;
-    width: 650px;
-    height: 500px;
-    padding: 20px;
-    border-radius: 10px;
-    background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
+    width: 80%;
+    height: 80%;
+    padding: 10px;
+    border-radius: 5px;
 }
 .close {
     background: #606061;
