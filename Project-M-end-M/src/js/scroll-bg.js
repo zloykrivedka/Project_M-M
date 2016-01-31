@@ -56,11 +56,13 @@ $(function() {
 function goEnd(){
     $('.bg-container').removeClass('animate-end');
     $('.bg-container').addClass('animate-start');
+   // $('#iconStart').addClass('animation-end');
     $.scrollTo($(document).height()-$(window).height(), 2000);
 }
 
 function goStart(){
     $('.bg-container').removeClass('animate-start');
     $('.bg-container').addClass('animate-end');
+    //$('#iconStart').addClass('animation-start');
     $.scrollTo('#startPage', 700);
 }

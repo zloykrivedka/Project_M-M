@@ -16,11 +16,16 @@
     <title></title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <!--Цссска для фона и эфекта приплижения-->
-    <link rel="stylesheet" href="css/scroll-bg.css" media="screen" type="text/css" />
 
-    <!--Цссска для иконки и эфекта пульсации-->
-    <link rel="stylesheet" href="css/pulse-icon.css" />
+    <!--Background zoom effect-->
+    <link rel="stylesheet" href="css/background/bg-zoom-effect.css" media="screen" type="text/css" />
+
+    <!--Icon effects-->
+    <link rel="stylesheet" href="css/icon/icon.css" />
+    <link rel="stylesheet" href="css/icon/icon-pulse-effect.css" />
+    <link rel="stylesheet" href="css/icon/icon-hover-effect.css"/>
+    <link rel="stylesheet" href="css/icon/icon-animations.css"/>
+
     <link rel="stylesheet" href="css/main.css"/>
 
     <script src="js/jquery-2.2.0.min.js"></script>
@@ -31,8 +36,9 @@
 
     <!--ВКашечка-->
     <script type="text/javascript" src="http://vk.com/js/api/share.js?90" charset="windows-1251"></script>
-    <script type="text/javascript" src="js/facebook-share.js" charset="windows-1251"></script>
-    <script type="text/javascript" src="js/twitter-share.js" charset="windows-1251"></script>
+    <script type="text/javascript" src="js/ShareSocialNetwork/facebook-share.js" charset="windows-1251"></script>
+    <script type="text/javascript" src="js/ShareSocialNetwork/twitter-share.js" charset="windows-1251"></script>
+
     <script type="text/javascript" src="js/pop.js" charset="windows-1251"></script>
 </head>
 <body>
@@ -127,19 +133,22 @@
         <a id="startPage" href="#startPage" name="startPage"></a>
         <div class="icon-title-start"><h1 align="center"><p>Start</p></h1></div>
 
-        <div id="iconStart" class="icon">
+        <div id="iconStart" class="icon ch-item">
+            <div class="ch-info">
+                <h3>Старт</h3>
+                <p>Ииииха <a href="/">Сылка</a></p>
+            </div>
             <div class="pulse2"></div>
-            <div class="pulse1"></div>
         </div>
     </div>
 
     <div class="icon-container-end-page">
+        <div>
         <div id="iconEnd" class="icon">
             <div id="iconEndPulse1" class="pulse1"></div>
             <div id="iconEndPulse2" class="pulse2"></div>
         </div>
-        <div class="icon-title-back"><h1 align="center"><p>Go Back</p></h1></div>
-
+        </div>
         <!--Панель в конце страницы, сюда приезжает
         скрол и тут же будет происходить основное действо-->
         <div id="endPageDiv" class="end-page-container">

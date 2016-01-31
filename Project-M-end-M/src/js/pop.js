@@ -1,5 +1,4 @@
-<script>
- $(document).ready(function(){
+$(document).ready(function(){
 //Скрыть PopUp при загрузке страницы
 PopUpHide();
 });
@@ -11,4 +10,3 @@ $("#popup1").show();
 function PopUpHide(){
 $("#popup1").hide();
 }
-</script>

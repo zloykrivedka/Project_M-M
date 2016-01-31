@@ -1,37 +1,3 @@
-
-
-.icon-social-container{
-    position: fixed;
-    right: 0; bottom: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    width: 200px;
-}
-
-.icon-social{
-    left: 0; right: 0; bottom: 0;
-    height: 60px;
-    width: 60px;
-}
-
-
-.icon-title-start {
-    margin-top: 15%;
-    width: auto;
-    height: 40px;
-    top: 22%; left: 0; bottom: 0; right: 0;
-    color: #ffffff;
-    font-size: 150%;
-}
-
-.icon-title-back{
-    width: auto;
-    height: 40px;
-    margin-top: 15%;
-    color: #ffffff;
-    font-size: 150%;
-}
-
 .content-container {
     position:absolute;
     /*background-color:rgba(255,255,255,1);*/
@@ -62,6 +28,14 @@
     margin-left:auto;
     margin-right:auto;
     width:100%;
+}
+
+.icon-social-container{
+    position: fixed;
+    right: 0; bottom: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    width: 200px;
 }
 
 .end-page-container {
