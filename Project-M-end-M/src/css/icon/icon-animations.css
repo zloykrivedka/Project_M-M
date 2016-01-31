@@ -1,8 +1,10 @@
-.icon.animation-end{
-    animation: 500ms icon-end;
+
+
+.icon.hide-central{
+    animation: 500ms h-central;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-} @keyframes icon-end {
+} @keyframes h-central {
       0%{
           transform: scale(1);
       }
@@ -12,78 +14,170 @@
       }
   }
 
-.icon.animation-start-left-top{
-    animation: 5000ms icon-start-lt;
+.icon.show-central{
+    animation: 500ms sh-central;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-} @keyframes icon-start-lt {
+} @keyframes sh-central {
+      0%{
+          transform: scale(0);
+      }
+      100%{
+          transform: scale(1);
+      }
+  }
+
+.icon.show-lt{
+    animation: 500ms sh-lt;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+} @keyframes sh-lt {
       0%{
           transform: scale(0);
           opacity: 0;
-          margin-left: -20%;
-          margin-top: -20%;
+          margin-left: -30%;
+          margin-top: -7%;
       }
       100%{
           transform: scale(1);
           opacity: 1;
-          margin-left: 20%;
+          margin-left: 30%;
           margin-top: 10%;
       }
   }
 
-.icon.animation-start-left-bottom{
-    animation: 5000ms icon-start-lb;
+.icon.hide-lt{
+    animation: 500ms h-lt;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-} @keyframes icon-start-lb {
+} @keyframes h-lt {
+      0%{
+          transform: scale(1);
+          opacity: 1;
+          margin-left: 30%;
+          margin-top: 10%;
+      }
+      100%{
+          transform: scale(0);
+          opacity: 0;
+          margin-left: -30%;
+          margin-top: -10%;
+      }
+  }
+
+
+.icon.show-lb{
+    animation: 500ms s-lb;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+} @keyframes s-lb {
       0%{
           transform: scale(0);
           opacity: 0;
-          margin-left: -20%;
+          margin-left: -30%;
           margin-bottom: -10%;
       }
       100%{
           transform: scale(1);
           opacity: 1;
-          margin-left: 20%;
+          margin-left: 30%;
           margin-bottom: 10%;
       }
   }
 
-.icon.animation-start-right-top{
-    animation: 5000ms icon-start-rt;
+.icon.hide-lb{
+    animation: 500ms h-lb;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-} @keyframes icon-start-rt {
+} @keyframes h-lb {
+      0%{
+          transform: scale(1);
+          opacity: 1;
+          margin-left: 30%;
+          margin-bottom: 10%;
+      }
+      100%{
+          transform: scale(0);
+          opacity: 0;
+          margin-left: -30%;
+          margin-bottom: -10%;
+      }
+  }
+
+
+.icon.show-rt{
+    animation: 500ms s-rt;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+} @keyframes s-rt {
       0%{
           transform: scale(0);
           opacity: 0;
-          margin-right: -20%;
-          margin-top: -20%;
+          margin-right: -30%;
+          margin-top: -10%;
       }
       100%{
           transform: scale(1);
           opacity: 1;
-          margin-right: 20%;
+          margin-right: 30%;
           margin-top: 10%;
       }
   }
 
-.icon.animation-start-right-bottom{
-    animation: 5000ms icon-start-rb;
+.icon.hide-rt{
+    animation: 500ms h-rt;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
-} @keyframes icon-start-rb {
+} @keyframes h-rt {
+      100%{
+          transform: scale(0);
+          opacity: 0;
+          margin-right: -30%;
+          margin-top: -10%;
+      }
+      0%{
+          transform: scale(1);
+          opacity: 1;
+          margin-right: 30%;
+          margin-top: 10%;
+      }
+  }
+
+.icon.show-rb{
+    animation: 500ms s-rb;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+} @keyframes s-rb {
       0%{
           transform: scale(0);
           opacity: 0;
-          margin-right: -20%;
+          margin-right: -30%;
           margin-bottom: -10%;
       }
       100%{
           transform: scale(1);
           opacity: 1;
-          margin-right: 20%;
+          margin-right: 30%;
           margin-bottom: 10%;
       }
   }
+
+.icon.hide-rb{
+    animation: 500ms h-rb;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+} @keyframes h-rb {
+      100%{
+          transform: scale(0);
+          opacity: 0;
+          margin-right: -30%;
+          margin-bottom: -10%;
+      }
+      0%{
+          transform: scale(1);
+          opacity: 1;
+          margin-right: 30%;
+          margin-bottom: 10%;
+      }
+  }
+

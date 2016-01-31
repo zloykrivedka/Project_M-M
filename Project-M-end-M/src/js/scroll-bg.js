@@ -56,13 +56,53 @@ $(function() {
 function goEnd(){
     $('.bg-container').removeClass('animate-end');
     $('.bg-container').addClass('animate-start');
-    $('#iconStart').addClass('animation-end');
+
+    $('#iconStart').removeClass('show-central');
+    $('#iconStart').addClass('hide-central');
+
+    $('#iconPhotoPage').removeClass('hide');
+    $('#iconPhotoPage').removeClass('hide-lt');
+    $('#iconPhotoPage').addClass('show-lt');
+
+    $('#iconProjectPage').removeClass('hide');
+    $('#iconProjectPage').removeClass('hide-lb');
+    $('#iconProjectPage').addClass('show-lb');
+
+    $('#iconCatalogPage').removeClass('hide');
+    $('#iconCatalogPage').removeClass('hide-rt');
+    $('#iconCatalogPage').addClass('show-rt');
+
+    $('#iconCutPage').removeClass('hide');
+    $('#iconCutPage').removeClass('hide-rb');
+    $('#iconCutPage').addClass('show-rb');
+
+    $('#iconEnd').removeClass('hide');
+    $('#iconEnd').removeClass('hide-central');
+    $('#iconEnd').addClass('show-central');
+
     $.scrollTo($(document).height()-$(window).height(), 2000);
 }
 
 function goStart(){
     $('.bg-container').removeClass('animate-start');
     $('.bg-container').addClass('animate-end');
-    $('#iconStart').addClass('animation-start');
+
+    $('#iconStart').removeClass('hide-central');
+    $('#iconStart').addClass('show-central');
+
+    $('#iconPhotoPage').removeClass('show-lt');
+    $('#iconPhotoPage').addClass('hide-lt');
+
+    $('#iconProjectPage').removeClass('show-lb');
+    $('#iconProjectPage').addClass('hide-lb');
+
+    $('#iconCatalogPage').removeClass('show-rt');
+    $('#iconCatalogPage').addClass('hide-rt');
+
+    $('#iconCutPage').removeClass('show-rb');
+    $('#iconCutPage').addClass('hide-rb');
+
+    $('#iconEnd').removeClass('show-central');
+    $('#iconEnd').addClass('hide-central');
     $.scrollTo('#startPage', 700);
 }
