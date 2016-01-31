@@ -80,7 +80,7 @@ function goEnd(){
     $('#iconEnd').removeClass('hide-central');
     $('#iconEnd').addClass('show-central');
 
-    $.scrollTo($(document).height()-$(window).height(), 2000);
+    $.scrollTo($(document).height()-$(window).height(), 500);
 }
 
 function goStart(){
@@ -104,5 +104,5 @@ function goStart(){
 
     $('#iconEnd').removeClass('show-central');
     $('#iconEnd').addClass('hide-central');
-    $.scrollTo('#startPage', 700);
+    $.scrollTo('#startPage', 500);
 }
