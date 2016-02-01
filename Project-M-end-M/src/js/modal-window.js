@@ -4,7 +4,6 @@ var modalWindow = {
 
 initBlock: function() {
     _block = document.getElementById('blockscreen'); //Получаем наш блокирующий фон по ID
-
     //Если он не определен, то создадим его
     if (!_block) {
         var parent = document.getElementsByTagName('body')[0]; //Получим первый элемент тега body
