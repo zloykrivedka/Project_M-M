@@ -6,7 +6,7 @@ var scrolling = true;
 
 $(window).scroll(function(e) {
 
-    console.log($(window).scrollTop(),$('#midPage').offset().top);
+    console.log($(window).scrollTop(),$('#mainFrame').offset().top);
 
     var scrollTop = $(window).scrollTop();
     var winHeight = $(window).height();
@@ -22,49 +22,106 @@ $(window).scroll(function(e) {
     */
 
     if(scrollTop == 0){
-        //lastScrollTop = true;
+        mainPageAnimationEnd();
         scrolling = true;
     }
-    if(scrollTop == $('#endPage').offset().top){
-        //lastScrollTop = false;
+    if( scrollTop == $('#mainFrame').offset().top){
+        mainPageAnimationStart();
         scrolling = true;
     }
-    if(scrollTop == $('#midPage').offset().top){
-        //lastScrollTop = true;
+    if( scrollTop == $('#photoFrame').offset().top){
+        mainPageAnimationEnd();
+        scrolling = true;
+    }
+    if( scrollTop == $('#projectFrame').offset().top){
+        mainPageAnimationEnd();
+        scrolling = true;
+    }
+    if( scrollTop == $('#cutFrame').offset().top){
+        mainPageAnimationEnd();
+        scrolling = true;
+    }
+    if( scrollTop == $('#catalogFrame').offset().top){
+        mainPageAnimationEnd();
+        scrolling = true;
+    }
+    if( scrollTop == $('#endFrame').offset().top){
+        mainPageAnimationEnd();
         scrolling = true;
     }
 
     if( scrollTop > 0 &&
-        scrollTop != $('#endPage').offset().top&&
-        scrollTop != $('#midPage').offset().top &&
-        scrolling == true &&
-        wayScroll(scrollTop) == true ){
-        if(scrollTop > $('#firstPage').offset().top &&
-            scrollTop < $('#midPage').offset().top) {
-            goMid();
+        scrollTop != $('#startFrame').offset().top &&
+        scrollTop != $('#mainFrame').offset().top &&
+        scrollTop != $('#photoFrame').offset().top &&
+        scrollTop != $('#projectFrame').offset().top &&
+        scrollTop != $('#cutFrame').offset().top &&
+        scrollTop != $('#catalogFrame').offset().top &&
+        scrollTop != $('#endFrame').offset().top &&
+        scrolling == true){
+
+        if(wayScroll(scrollTop) == true){
+            if( scrollTop > $('#startFrame').offset().top &&
+                scrollTop < $('#mainFrame').offset().top){
+                $('.bg-container').removeClass('animate-zoom-bg-end');
+                $('.bg-container').addClass('animate-zoom-bg-start');
+                goMain();
+            }
+            if( scrollTop > $('#mainFrame').offset().top &&
+                scrollTop < $('#photoFrame').offset().top){
+                goPhoto();
+            }
+            if( scrollTop > $('#photoFrame').offset().top &&
+                scrollTop < $('#projectFrame').offset().top){
+                goProject();
+            }
+            if( scrollTop > $('#projectFrame').offset().top &&
+                scrollTop < $('#cutFrame').offset().top){
+                goCut();
+            }
+            if( scrollTop > $('#cutFrame').offset().top &&
+                scrollTop < $('#catalogFrame').offset().top){
+                goCatalog();
+            }
+            if( scrollTop > $('#catalogFrame').offset().top &&
+                scrollTop < $('#endFrame').offset().top){
+                goEnd();
+            }
         }
-        if(scrollTop > $('#midPage').offset().top &&
-            scrollTop < $('#endPage').offset().top &&
-            scrolling == true &&
-            wayScroll(scrollTop) == true){
-            goEnd();
+
+        if(wayScroll(scrollTop) == false){
+            if( scrollTop > $('#startFrame').offset().top &&
+                scrollTop < $('#mainFrame').offset().top){
+                goStart();
+            }
+            if( scrollTop > $('#mainFrame').offset().top &&
+                scrollTop < $('#photoFrame').offset().top){
+                goMain();
+            }
+            if( scrollTop > $('#photoFrame').offset().top &&
+                scrollTop < $('#projectFrame').offset().top){
+                goPhoto();
+            }
+            if( scrollTop > $('#projectFrame').offset().top &&
+                scrollTop < $('#cutFrame').offset().top){
+                goProject();
+            }
+            if( scrollTop > $('#cutFrame').offset().top &&
+                scrollTop < $('#catalogFrame').offset().top){
+                goCut();
+            }
+            if( scrollTop > $('#catalogFrame').offset().top &&
+                scrollTop < $('#endFrame').offset().top){
+                goCatalog();
+            }
         }
-        if(scrollTop < $('#endPage').offset().top &&
-            scrollTop > $('#midPage').offset().top &&
-            scrolling == true &&
-            wayScroll(scrollTop) == false){
-            goMid();
-        }
+
         scrolling = false;
     }
     lastScrollTop = scrollTop;
 });
 
 $(document).ready(function(e){
-    var pageHeight = $(window).height()*2.5;
-    //$('.content-container').css('height', pageHeight+'px');
-    //$('.icon-container').css('height', $(window).height()+'px');
-    //$('.icon-container-end-page').css('height', $(window).height()+'px');
     $('.frame-container').css('height', $(window).height()+'px');
     $('.frame-container').css('width', $(window).width()+'px');
 });
@@ -73,7 +130,7 @@ $(document).ready(function(e){
 $(function() {
     $('#iconStart').click(function (e) {
         scrolling = false;
-       goMid();
+       goMain();
     });
 });
 
@@ -85,8 +142,30 @@ $(function() {
 });
 
 function goStart(){
-    /*$('.bg-container').removeClass('animate-start');
-    $('.bg-container').addClass('animate-end');
+    $.scrollTo('#startFrame', 500);
+}
+function goMain(){
+    $.scrollTo('#mainFrame', 2000);
+}
+function goPhoto(){
+    $.scrollTo('#photoFrame', 500);
+}
+function goProject(){
+    $.scrollTo('#projectFrame', 500);
+}
+function goCut(){
+    $.scrollTo('#cutFrame', 500);
+}
+function goCatalog(){
+    $.scrollTo('#catalogFrame', 500);
+}
+function goEnd(){
+    $.scrollTo('#endFrame', 500);
+}
+
+function mainPageAnimationEnd(){
+    //$('.bg-container').removeClass('animate-start');
+    //$('.bg-container').addClass('animate-end');
 
     $('#iconStart').removeClass('hide-central');
     $('#iconStart').addClass('show-central');
@@ -104,12 +183,11 @@ function goStart(){
     $('#iconCutPage').addClass('hide-rb');
 
     $('#iconEnd').removeClass('show-central');
-    $('#iconEnd').addClass('hide-central');*/
-    $.scrollTo('#startPage', 500);
+    $('#iconEnd').addClass('hide-central');
 }
 
-function goMid(){
-    /*$('.bg-container').removeClass('animate-end');
+function mainPageAnimationStart(){
+    $('.bg-container').removeClass('animate-end');
     $('.bg-container').addClass('animate-start');
 
     $('#iconStart').removeClass('show-central');
@@ -133,39 +211,15 @@ function goMid(){
 
     $('#iconEnd').removeClass('hide');
     $('#iconEnd').removeClass('hide-central');
-    $('#iconEnd').addClass('show-central');*/
-    $.scrollTo('#midPage', 500);
-}
-
-function goEnd(){
-   /*
-    $('.bg-container').removeClass('animate-end');
-    $('.bg-container').addClass('animate-start');
-
-    $('#iconStart').removeClass('show-central');
-
-    $('#iconPhotoPage').removeClass('hide');
-    $('#iconPhotoPage').removeClass('hide-lt');
-
-    $('#iconProjectPage').removeClass('hide');
-    $('#iconProjectPage').removeClass('hide-lb');
-
-    $('#iconCatalogPage').removeClass('hide');
-    $('#iconCatalogPage').removeClass('hide-rt');
-
-    $('#iconCutPage').removeClass('hide');
-    $('#iconCutPage').removeClass('hide-rb');
-
-    $('#iconEnd').removeClass('hide');
-    $('#iconEnd').removeClass('hide-central');
-*/
-    $.scrollTo('#endPage', 500);
+    $('#iconEnd').addClass('show-central');
 }
 
 function wayScroll(scrollTop){
     if(scrollTop > lastScrollTop){
+        //alert("true");
         return true;
     } else{
+        //alert("false");
         return false;
     }
 }

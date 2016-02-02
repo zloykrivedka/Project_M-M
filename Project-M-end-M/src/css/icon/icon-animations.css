@@ -1,7 +1,7 @@
 
 
 .icon.hide-central{
-    animation: 500ms h-central;
+    animation: 1500ms h-central;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } @keyframes h-central {
@@ -15,7 +15,7 @@
   }
 
 .icon.show-central{
-    animation: 500ms sh-central;
+    animation: 1500ms sh-central;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } @keyframes sh-central {
@@ -28,7 +28,7 @@
   }
 
 .icon.show-lt{
-    animation: 500ms sh-lt;
+    animation: 1500ms sh-lt;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } @keyframes sh-lt {
@@ -47,7 +47,7 @@
   }
 
 .icon.hide-lt{
-    animation: 500ms h-lt;
+    animation: 1500ms h-lt;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } @keyframes h-lt {
@@ -67,7 +67,7 @@
 
 
 .icon.show-lb{
-    animation: 500ms s-lb;
+    animation: 1500ms s-lb;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } @keyframes s-lb {
@@ -86,7 +86,7 @@
   }
 
 .icon.hide-lb{
-    animation: 500ms h-lb;
+    animation: 1500ms h-lb;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } @keyframes h-lb {
@@ -106,7 +106,7 @@
 
 
 .icon.show-rt{
-    animation: 500ms s-rt;
+    animation: 1500ms s-rt;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } @keyframes s-rt {
@@ -125,7 +125,7 @@
   }
 
 .icon.hide-rt{
-    animation: 500ms h-rt;
+    animation: 1500ms h-rt;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } @keyframes h-rt {
@@ -144,7 +144,7 @@
   }
 
 .icon.show-rb{
-    animation: 500ms s-rb;
+    animation: 1500ms s-rb;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } @keyframes s-rb {
@@ -163,7 +163,7 @@
   }
 
 .icon.hide-rb{
-    animation: 500ms h-rb;
+    animation: 1500ms h-rb;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 } @keyframes h-rb {
