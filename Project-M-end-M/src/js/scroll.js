@@ -12,7 +12,6 @@ $(window).scroll(function(e) {
     var winHeight = $(window).height();
     var pageHeight = $(document).height();
 
-
     /*Переделать через анимации в SCCках
     $('.bg-container').css('-webkit-filter', 'blur('+$(window).scrollTop()/500+'px)');
     $('.bg-container').css('-moz-filter', 'blur('+$(window).scrollTop()/500+'px)');
@@ -69,6 +68,8 @@ $(window).scroll(function(e) {
             }
             if( scrollTop > $('#mainFrame').offset().top &&
                 scrollTop < $('#photoFrame').offset().top){
+                $('.bg-container').removeClass('animate-zoom-bg-start');
+                $('.bg-container').addClass('animate-zoom-bg-end');
                 goPhoto();
             }
             if( scrollTop > $('#photoFrame').offset().top &&
@@ -92,10 +93,14 @@ $(window).scroll(function(e) {
         if(wayScroll(scrollTop) == false){
             if( scrollTop > $('#startFrame').offset().top &&
                 scrollTop < $('#mainFrame').offset().top){
+                $('.bg-container').removeClass('animate-zoom-bg-start');
+                $('.bg-container').addClass('animate-zoom-bg-end');
                 goStart();
             }
             if( scrollTop > $('#mainFrame').offset().top &&
                 scrollTop < $('#photoFrame').offset().top){
+                $('.bg-container').removeClass('animate-zoom-bg-end');
+                $('.bg-container').addClass('animate-zoom-bg-start');
                 goMain();
             }
             if( scrollTop > $('#photoFrame').offset().top &&
