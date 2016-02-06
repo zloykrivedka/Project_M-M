@@ -12,13 +12,13 @@ $(window).scroll(function(e) {
     var winHeight = $(window).height();
     var pageHeight = $(document).height();
 
-    /*Переделать через анимации в SCCках
+    //Переделать через анимации в SCCках
     $('.bg-container').css('-webkit-filter', 'blur('+$(window).scrollTop()/500+'px)');
     $('.bg-container').css('-moz-filter', 'blur('+$(window).scrollTop()/500+'px)');
     $('.bg-container').css('-o-filter', 'blur('+$(window).scrollTop()/500+'px)');
     $('.bg-container').css('-ms-filter', 'blur('+$(window).scrollTop()/500+'px)');
     $('.bg-container').css('filter', 'blur('+$(window).scrollTop()/500+'px)');
-    */
+    
 
     if(scrollTop == 0){
         mainPageAnimationEnd();
@@ -129,6 +129,8 @@ $(window).scroll(function(e) {
 $(document).ready(function(e){
     $('.frame-container').css('height', $(window).height()+'px');
     $('.frame-container').css('width', $(window).width()+'px');
+    $('.frame-container').css('max-height', $(window).height()+'px');
+    $('.frame-container').css('max-width', $(window).width()+'px');
 });
 
 //Эфент нажатия на иконку (первую)
@@ -172,51 +174,51 @@ function mainPageAnimationEnd(){
     //$('.bg-container').removeClass('animate-start');
     //$('.bg-container').addClass('animate-end');
 
-    $('#iconStart').removeClass('hide-central');
-    $('#iconStart').addClass('show-central');
+    $('#iconStart').removeClass('hide');
+    $('#iconStart').addClass('show');
 
-    $('#iconPhotoPage').removeClass('show-lt');
-    $('#iconPhotoPage').addClass('hide-lt');
+    $('#iconPhotoPage').removeClass('show');
+    $('#iconPhotoPage').addClass('hide');
 
-    $('#iconProjectPage').removeClass('show-lb');
-    $('#iconProjectPage').addClass('hide-lb');
+    $('#iconProjectPage').removeClass('show');
+    $('#iconProjectPage').addClass('hide');
 
-    $('#iconCatalogPage').removeClass('show-rt');
-    $('#iconCatalogPage').addClass('hide-rt');
+    $('#iconCatalogPage').removeClass('show');
+    $('#iconCatalogPage').addClass('hide');
 
-    $('#iconCutPage').removeClass('show-rb');
-    $('#iconCutPage').addClass('hide-rb');
+    $('#iconCutPage').removeClass('show');
+    $('#iconCutPage').addClass('hide');
 
-    $('#iconEnd').removeClass('show-central');
-    $('#iconEnd').addClass('hide-central');
+    $('#iconEnd').removeClass('show');
+    $('#iconEnd').addClass('hide');
 }
 
 function mainPageAnimationStart(){
     $('.bg-container').removeClass('animate-end');
     $('.bg-container').addClass('animate-start');
 
-    $('#iconStart').removeClass('show-central');
-    $('#iconStart').addClass('hide-central');
+    $('#iconStart').removeClass('show');
+    $('#iconStart').addClass('hide');
 
     $('#iconPhotoPage').removeClass('hide');
-    $('#iconPhotoPage').removeClass('hide-lt');
-    $('#iconPhotoPage').addClass('show-lt');
+    $('#iconPhotoPage').removeClass('animation-hide');
+    $('#iconPhotoPage').addClass('animation-show');
 
     $('#iconProjectPage').removeClass('hide');
-    $('#iconProjectPage').removeClass('hide-lb');
-    $('#iconProjectPage').addClass('show-lb');
+    $('#iconProjectPage').removeClass('animation-hide');
+    $('#iconProjectPage').addClass('animation-show');
 
     $('#iconCatalogPage').removeClass('hide');
-    $('#iconCatalogPage').removeClass('hide-rt');
-    $('#iconCatalogPage').addClass('show-rt');
+    $('#iconCatalogPage').removeClass('animation-hide');
+    $('#iconCatalogPage').addClass('animation-show');
 
     $('#iconCutPage').removeClass('hide');
-    $('#iconCutPage').removeClass('hide-rb');
-    $('#iconCutPage').addClass('show-rb');
+    $('#iconCutPage').removeClass('animation-hide');
+    $('#iconCutPage').addClass('animation-show');
 
     $('#iconEnd').removeClass('hide');
-    $('#iconEnd').removeClass('hide-central');
-    $('#iconEnd').addClass('show-central');
+    $('#iconEnd').removeClass('animation-hide');
+    $('#iconEnd').addClass('animation-show');
 }
 
 function wayScroll(scrollTop){

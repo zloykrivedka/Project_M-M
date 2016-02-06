@@ -1,183 +1,27 @@
 
-
-.icon.hide-central{
-    animation: 1500ms h-central;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-} @keyframes h-central {
+.icon.animation-hide{
+    animation: 1500ms hide;
+} @keyframes hide {
       0%{
-          transform: scale(1);
+          opacity: 1;
       }
       100%{
-          transform: scale(0);
+          opacity: 0;
           display: none;
       }
   }
 
-.icon.show-central{
-    animation: 1500ms sh-central;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-} @keyframes sh-central {
+.icon.animation-show{
+    animation: 1500ms show;
+} @keyframes show {
       0%{
-          transform: scale(0);
+         opacity: 0;
+          display: none;
       }
       100%{
-          transform: scale(1);
-      }
-  }
-
-.icon.show-lt{
-    animation: 1500ms sh-lt;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-} @keyframes sh-lt {
-      0%{
-          transform: scale(0);
-          opacity: 0;
-          margin-left: -25%;
-          margin-top: -10%;
-      }
-      100%{
-          transform: scale(1);
-          opacity: 1;
-          margin-left: 25%;
-          margin-top: 10%;
-      }
-  }
-
-.icon.hide-lt{
-    animation: 1500ms h-lt;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-} @keyframes h-lt {
-      0%{
-          transform: scale(1);
-          opacity: 1;
-          margin-left: 25%;
-          margin-top: 10%;
-      }
-      100%{
-          transform: scale(0);
-          opacity: 0;
-          margin-left: -25%;
-          margin-top: -10%;
+         opacity: 1;
       }
   }
 
 
-.icon.show-lb{
-    animation: 1500ms s-lb;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-} @keyframes s-lb {
-      0%{
-          transform: scale(0);
-          opacity: 0;
-          margin-left: -25%;
-          margin-bottom: -10%;
-      }
-      100%{
-          transform: scale(1);
-          opacity: 1;
-          margin-left: 25%;
-          margin-bottom: 10%;
-      }
-  }
-
-.icon.hide-lb{
-    animation: 1500ms h-lb;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-} @keyframes h-lb {
-      0%{
-          transform: scale(1);
-          opacity: 1;
-          margin-left: 25%;
-          margin-bottom: 10%;
-      }
-      100%{
-          transform: scale(0);
-          opacity: 0;
-          margin-left: -25%;
-          margin-bottom: -10%;
-      }
-  }
-
-
-.icon.show-rt{
-    animation: 1500ms s-rt;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-} @keyframes s-rt {
-      0%{
-          transform: scale(0);
-          opacity: 0;
-          margin-right: -25%;
-          margin-top: -10%;
-      }
-      100%{
-          transform: scale(1);
-          opacity: 1;
-          margin-right: 25%;
-          margin-top: 10%;
-      }
-  }
-
-.icon.hide-rt{
-    animation: 1500ms h-rt;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-} @keyframes h-rt {
-      100%{
-          transform: scale(0);
-          opacity: 0;
-          margin-right: -25%;
-          margin-top: -10%;
-      }
-      0%{
-          transform: scale(1);
-          opacity: 1;
-          margin-right: 25%;
-          margin-top: 10%;
-      }
-  }
-
-.icon.show-rb{
-    animation: 1500ms s-rb;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-} @keyframes s-rb {
-      0%{
-          transform: scale(0);
-          opacity: 0;
-          margin-right: -25%;
-          margin-bottom: -10%;
-      }
-      100%{
-          transform: scale(1);
-          opacity: 1;
-          margin-right: 25%;
-          margin-bottom: 10%;
-      }
-  }
-
-.icon.hide-rb{
-    animation: 1500ms h-rb;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-} @keyframes h-rb {
-      100%{
-          transform: scale(0);
-          opacity: 1;
-          margin-right: -25%;
-          margin-bottom: -10%;
-      }
-      0%{
-          transform: scale(1);
-          opacity: 0;
-          margin-right: 25%;
-          margin-bottom: 10%;
-      }
-  }
 

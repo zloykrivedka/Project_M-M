@@ -10,14 +10,24 @@
     width:100%;
 }
 
+.icon-bg{
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    background: url(http://morepsd.ru/wp-content/uploads/2012/06/glass-table2.png) no-repeat;
+    background-size: 350px 350px;
+    margin-left: 13%;
+    left: 0;
+    bottom: 0;
+}
+
+
 .icon-container{
-    position:relative;
+    position: absolute;
     /*background-color:rgba(255,255,255,1);*/
     z-index: 4;
+    margin: auto;
     left:0; right:0; top:0; bottom: 0;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
 }
 
 .icon-container-end-page{
@@ -31,7 +41,7 @@
 }
 
 .icon-social-container{
-    position: fixed;
+    /*position: fixed;*/
     right: 0; bottom: 0;
     margin: 10px 10px 10px 10px;
     width: auto;
@@ -39,6 +49,7 @@
 
 .frame-container{
     position: relative;
+    z-index: 2;
     top: 0; left:0; right:0; bottom: 0;
 }
 
@@ -55,6 +66,10 @@
 
 .content-container p{
     color: #ffffff;
+}
+
+.phone-number-container{
+    margin: 10px 10px 10px 10px;
 }
 
 /*Bootstratp adds*/

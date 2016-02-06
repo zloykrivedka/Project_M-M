@@ -2,13 +2,13 @@ body {background-color: #000000;}
 
 .icon{
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     background: url(../../img/icon1.png) no-repeat;
-    background-size: 180px 180px;
-    margin: auto;
+    background-size: 140px 140px;
     top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 3;
+    margin: auto;
+    z-index: 5;
 
     -webkit-box-shadow: 
       0 0 0 10px   rgba(255,255,255,.2),
@@ -29,9 +29,62 @@ inset 0 0 0 15px   rgba(255,255,155,.4);
     /* border-radius: 50% has issues on some mobile browsers */
 }
 
+.icon-main{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: url(../../img/bulb-1.png) no-repeat;
+    background-size: 250px 250px;
+    top: 0; left: 0; bottom: 0; right: 0;
+    margin: auto;
+    z-index: 5;
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+}
+
+.icon-img-1 {
+    background-image: url(../../img/bulb-1.png);
+}
+
+.ch-img-2 {
+    /*background-image: url(1_2.jpg);*/
+}
+
+.ch-img-3 {
+    /*background-image: url(1_3.jpg);*/
+}
+
+
 .icon.hide{
     display: none;
 }
+
+.icon.lt{
+    margin-left: 35%;
+    margin-top: 15%;
+}
+
+.icon.lb{
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+.icon.rt{
+    margin-right: 35%;
+    margin-top: 15%;
+}
+
+
+.icon.rb{
+    margin-right: 20%;
+    margin-bottom: 10%;
+}
+
+.icon-main.central-b{
+    margin-bottom: 5%;
+}
+
 
 .icon-social{
     left: 0; right: 0; bottom: 0;
