@@ -120,7 +120,6 @@ $(window).scroll(function(e) {
                 goCatalog();
             }
         }
-
         scrolling = false;
     }
     lastScrollTop = scrollTop;
