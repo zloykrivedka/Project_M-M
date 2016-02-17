@@ -41,15 +41,6 @@
     <script type="text/javascript" src="js/ShareSocialNetwork/twitter-share.js" charset="windows-1251"></script>
 
     <script type="text/javascript" src="js/modal-window.js" charset="windows-1251"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function (e) {
-            $('.frame-container').css('height', $(window).height() + 'px');
-            $('.frame-container').css('width', $(window).width() - 150 + 'px');
-            $('.frame-container').css('max-height', $(window).height() + 'px');
-            $('.frame-container').css('max-width', $(window).width() + 'px');
-        });
-    </script>
 </head>
 <body>
 
@@ -104,7 +95,7 @@
 
 <div class="frame-container" id="main-frame-cantainer">
     <a id="startFrame" href="#startFrame" name="startFrame"></a>
-    <h1>Материалы и Механизмы</h1>
+    <div class="title-start">Материалы и Механизмы</div>
     <div id="iconStartFrame" class="icon-main ch-item pos-ab">
         <div class="pulse2"></div>
         <div class="ch-info">
@@ -152,15 +143,34 @@
         <div class="pulse2"></div>
     </div>
     </div>
+
+<div class="rip"><a id="photoFrame" href="#photoFrame" name="photoFrame"></a></a></div>
+<div class="frame-content-container bg-3">
+    <div class="title-content">Фотог-галерея</div>
+    <hr>
 </div>
-<div class="frame-container bg-3"><a id="photoFrame" href="#photoFrame" name="photoFrame"></a></div>
-<div class="frame-container bg-3"><a id="projectFrame" href="#projectFrame" name="projectFrame"></a></div>
-<div class="frame-container bg-3"><a id="cutFrame" href="#cutFrame" name="cutFrame"></a></div>
-<div class="frame-container bg-3"><a id="catalogFrame" href="#catalogFrame" name="catalogFrame"></a></div>
+
+<div class="rip"><a id="projectFrame" href="#projectFrame" name="projectFrame"></a></div>
+<div class="frame-content-container bg-3">
+    <div class="title-content">Проектирование</div>
+    <hr>
+</div>
+
+<div class="rip"><a id="cutFrame" href="#cutFrame" name="cutFrame"></a></div>
+<div class="frame-content-container bg-3">
+    <div class="title-content">Монтажные работы</div>
+    <hr>
+</div>
+
+<div class="rip"><a id="catalogFrame" href="#catalogFrame" name="catalogFrame"></a></div>
+<div class="frame-content-container bg-3">
+    <div class="title-content">Каталог товаров</div>
+    <hr>
+</div>
 
 <div class="frame-container">
     <a id="endFrame" href="#endFrame" name="endFrame"></a>
-    <div id="iconEndFrame" class="icon-main ch-item pos-ab">
+    <div id="iconEndFrame" class="icon-main ch-item">
         <div class="pulse2"></div>
         <div class="ch-info">
             <h3>Main menu</h3>
@@ -168,6 +178,13 @@
         </div>
     </div>
 </div>
+
+<div id="iconBackToMain" class="icon-back-to-main hide">
+    <div class="pulse2"></div>
+    <div class="ch-info">
+        <h3>Main menu</h3>
+        <p>Ииииха <a href="/">Сылка</a></p>
+    </div>
 </body>
 </html>
 

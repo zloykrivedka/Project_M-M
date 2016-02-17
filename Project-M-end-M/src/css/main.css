@@ -19,12 +19,35 @@
     margin: auto;
 }
 
+.frame-content-container{
+    position: relative;
+    z-index: 0;
+    top: 0; left:0; right:0; bottom: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.frame-content-container hr{
+    background-color: white;
+    border: none;
+    height: 5px;
+    width: 70%;
+    margin: auto;
+    -webkit-margin-after: 0px;
+    -webkit-margin-before: 0px;
+}
+
+.rip{
+    position: relative;
+    height: 50px;
+}
+
 .bg-3{
     background-image: url(../img/bg-3.png);
     background-size: 100%;
 }
 
-.frame-container h1{
+.title-start{
     position: absolute;
     z-index: 3;
     width: 100%;
@@ -33,6 +56,16 @@
     margin-top: 7%;
     font-size: 450%;
     color: black;
+}
+
+.title-content{
+    z-index: 3;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 0%;
+    font-size: 350%;
+    color: white;
 }
 
 .phone-number-container{
