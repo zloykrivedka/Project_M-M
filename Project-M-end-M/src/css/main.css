@@ -1,46 +1,11 @@
 .content-container {
-    position:absolute;
-    /*background-color:rgba(255,255,255,1);*/
+    position:relative;
     z-index: 3;
-    left:0;
-    right:0;
-    top:0;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
+    left:0; right:0; top:0;
 }
 
-.icon-bg{
-    position: absolute;
-    height: 50%;
-    width: 50%;
-    background: url(http://morepsd.ru/wp-content/uploads/2012/06/glass-table2.png) no-repeat;
-    background-size: 350px 350px;
-    margin-left: 13%;
-    left: 0;
-    bottom: 0;
-}
-
-.icon-container{
-    position: absolute;
-    /*background-color:rgba(255,255,255,1);*/
-    z-index: 4;
-    margin: auto;
-    left:0; right:0; top:0; bottom: 0;
-}
-
-.icon-container-end-page{
-    position:absolute;
-    /*background-color:rgba(255,255,255,1);*/
-    z-index: 4;
-    left:0; right:0; bottom: 0;
-    margin-left:auto;
-    margin-right:auto;
-    width:100%;
-}
 
 .icon-social-container{
-    /*position: fixed;*/
     right: 0; bottom: 0;
     margin: 10px 10px 10px 10px;
     width: auto;
@@ -48,11 +13,15 @@
 
 .frame-container{
     position: relative;
-    z-index: 2;
+    z-index: 0;
     top: 0; left:0; right:0; bottom: 0;
-    background-color: lightgoldenrodyellow;
-    max-height: 70%;
     text-align: center;
+    margin: auto;
+}
+
+.bg-3{
+    background-image: url(../img/bg-3.png);
+    background-size: 100%;
 }
 
 .frame-container h1{
@@ -61,24 +30,9 @@
     width: 100%;
     height: auto;
     text-align: center;
-    margin-top: 12%;
+    margin-top: 7%;
     font-size: 450%;
-    color: #101010;
-}
-
-.end-page-container {
-    position: fixed;
-    left:0;
-    right:0;
-    bottom: 0;
-}
-
-.content-container h1{
-    color: #ffffff;
-}
-
-.content-container p{
-    color: #ffffff;
+    color: black;
 }
 
 .phone-number-container{

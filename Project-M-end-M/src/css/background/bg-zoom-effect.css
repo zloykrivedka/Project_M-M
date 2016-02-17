@@ -1,12 +1,12 @@
 body{padding:0;margin:0;}
 
 .bg-container {
-    position:absolute;
+    position:fixed;
     top:0; bottom: 0; left: 0; right: 0;
     z-index:0;
     width: 100%;
     padding-top:50%;
-    background: url(http://n-urist.ru/upload/iblock/fc0/fc08f08ec27279a78b972fac3c4ab0e4.jpg) center center no-repeat;
+    background: url(../../img/bg-1.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;

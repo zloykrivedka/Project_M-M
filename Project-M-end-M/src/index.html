@@ -2,59 +2,60 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="title" content="Project M&M" />
-    <meta name="description" content="Vladimir's very first and ver own project." />
-    <link rel="image_src" href="http://mysite.com/mypic.jpg" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="title" content="Project M&M"/>
+    <meta name="description" content="Vladimir's very first and ver own project."/>
+    <link rel="image_src" href="http://mysite.com/mypic.jpg"/>
 
-    <meta property="og:url"           content="http://project-m.com" />
-    <meta property="og:type"          content="website" />
-    <meta property="og:title"         content="Project M" />
-    <meta property="og:description"   content="Very own and personal site" />
-    <meta property="og:image"         content="http://www.project-m.com/path/image.jpg" />
+    <meta property="og:url" content="http://project-m.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Project M"/>
+    <meta property="og:description" content="Very own and personal site"/>
+    <meta property="og:image" content="http://www.project-m.com/path/image.jpg"/>
 
     <title></title>
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!--Background zoom effect-->
-    <link rel="stylesheet" href="css/background/bg-zoom-effect.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/background/bg-zoom-effect.css" media="screen" type="text/css"/>
 
     <!--Icon effects-->
-    <link rel="stylesheet" href="css/icon/icon.css" />
-    <link rel="stylesheet" href="css/icon/icon-pulse-effect.css" />
+    <link rel="stylesheet" href="css/icon/icon.css"/>
+    <link rel="stylesheet" href="css/icon/icon-pulse-effect.css"/>
     <link rel="stylesheet" href="css/icon/icon-hover-effect.css"/>
     <link rel="stylesheet" href="css/icon/icon-animations.css"/>
     <link rel="stylesheet" href="css/window-modal.css"/>
     <link rel="stylesheet" href="css/main.css"/>
 
-    <script type="text/javascript"  src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1.js"></script>
 
     <!--Скрипт для прокрутки автоскролла страницы
- + размытие фона
+ + размытие фона-->
     <script type="text/javascript" src="js/scroll.js"></script>
-    -->
+
 
     <!--Social nets-->
-    <script  type="text/javascript"  src="js/ShareSocialNetwork/facebook-share.js" charset="windows-1251"></script>
-    <script  type="text/javascript"  src="js/ShareSocialNetwork/twitter-share.js" charset="windows-1251"></script>
+    <script type="text/javascript" src="js/ShareSocialNetwork/facebook-share.js" charset="windows-1251"></script>
+    <script type="text/javascript" src="js/ShareSocialNetwork/twitter-share.js" charset="windows-1251"></script>
 
-    <script type="text/javascript"   src="js/modal-window.js" charset="windows-1251"></script>
+    <script type="text/javascript" src="js/modal-window.js" charset="windows-1251"></script>
 
     <script type="text/javascript">
-        $(document).ready(function(e){
-            $('.frame-container').css('height', $(window).height()+'px');
-            $('.frame-container').css('width', $(window).width()+'px');
-            $('.frame-container').css('max-height', $(window).height()+'px');
-            $('.frame-container').css('max-width', $(window).width()+'px');
+        $(document).ready(function (e) {
+            $('.frame-container').css('height', $(window).height() + 'px');
+            $('.frame-container').css('width', $(window).width() - 150 + 'px');
+            $('.frame-container').css('max-height', $(window).height() + 'px');
+            $('.frame-container').css('max-width', $(window).width() + 'px');
         });
     </script>
 </head>
 <body>
 
+<!--кнтэйнер для сой сетей-->
 <div id="endPageDivSocial" class="navbar-fixed-bottom-right icon-social-container">
-    <a onclick="FBShare()"><img class="icon-social" src="img/facebook-icon.png"  /></a>
+    <a onclick="FBShare()"><img class="icon-social" src="img/facebook-icon.png"/></a>
     <a href="https://twitter.com/intent/tweet?text=Look at our project!&amp;url=http://project-m.com&amp;hashtags=ProjectM,loveme">
         <img class="icon-social" src="img/twitter-icon.png"/>
     </a>
@@ -66,10 +67,10 @@
 
 <!--Верхнее вемю-->
 <nav class="navbar navbar-fixed-top navbar-inverse">
-
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -86,77 +87,87 @@
                     <a href="#openModal">Find Us</a>
                     <div id="openModal" class="modalDialog">
                         <a href="#close" title="Close" class="close">X</a>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d587.7322643877451!2d27.552164745722084!3d53.89746486035124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1454233785854" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d587.7322643877451!2d27.552164745722084!3d53.89746486035124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1454233785854"
+                                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </li>
             </ul>
         </div><!-- /.nav-collapse -->
     </div><!-- /.container -->
     <div class="navbar-fixed-bottom-right phone-number-container">
-        <h4 style="color: white">Наш телефон: <a href="tel:+375293036173" >+375293036173</a></h4>
+        <h4 style="color: white">Наш телефон: <a href="tel:+375293036173">+375293036173</a></h4>
     </div>
 </nav><!-- /.navbar -->
 
-    <div class="frame-container" id="main-frame-cantainer">
-        <a id="startFrame" href="#startFrame" name="startFrame"></a>
+<!--Контайнер для фона-->
+<div class="bg-container" id="bg-container"></div>
 
-        <h1>Материалы и Механизмы</h1>
-
-        <!--Контайнер для фона-->
-        <div class="bg-container" id="bg-container" ></div>
-
-        <!--
-            <div id="iconStart" class="icon ch-item">
-                <div class="ch-info">
-                    <h3>Start</h3>
-                    <p>Ииииха <a href="/">Сылка</a></p>
-                </div>
-                <div class="pulse2"></div>
-            </div>
-            -->
-
-        <div id="iconPhotoPage" class="icon lt ch-item">
-            <div class="ch-info">
-                <h3>Фото</h3>
-                <p>Ииииха <a href="/">Сылка</a></p>
-            </div>
-        </div>
-
-        <div id="iconProjectPage" class="icon lb ch-item">
-            <div class="ch-info">
-                <h3>Проект</h3>
-                <p>Ииииха <a href="/">Сылка</a></p>
-            </div>
-        </div>
-
-        <div id="iconCutPage" class="icon rt ch-item">
-            <div class="ch-info">
-                <h3>Мотнаж</h3>
-                <p>Ииииха <a href="/">Сылка</a></p>
-            </div>
-        </div>
-
-        <div id="iconCatalogPage" class="icon rb ch-item">
-            <div class="ch-info">
-                <h3>Каталог</h3>
-                <p>Ииииха <a href="/">Сылка</a></p>
-            </div>
+<div class="frame-container" id="main-frame-cantainer">
+    <a id="startFrame" href="#startFrame" name="startFrame"></a>
+    <h1>Материалы и Механизмы</h1>
+    <div id="iconStartFrame" class="icon-main ch-item pos-ab">
+        <div class="pulse2"></div>
+        <div class="ch-info">
+            <h3>Start</h3>
+            <p>Ииииха <a href="/">Сылка</a></p>
         </div>
     </div>
+</div>
 
-    <div class="frame-container">
-        <a id="mainFrame" href="#mainFrame" name="mainFrame"></a>
+<div class="frame-container">
+    <a id="midFrame" href="#midFrame" name="midFrame"></a>
+</div>
 
-        <div id="iconMain" class="icon-main central-b">
+<div class="frame-container">
+    <a id="mainFrame" href="#mainFrame" name="mainFrame"></a>
+    <div id="iconPhotoFrame" class="icon lt ch-item hide">
+        <div class="ch-info">
+            <h3>Фото</h3>
+            <p>Ииииха <a href="/">Сылка</a></p>
         </div>
+        <div class="pulse2"></div>
     </div>
 
-    <div class="frame-container"> <a id="photoFrame" href="#photoFrame" name="photoFrame"></a> </div>
-    <div class="frame-container"> <a id="projectFrame" href="#projectFrame" name="projectFrame"></a> </div>
-    <div class="frame-container"> <a id="cutFrame" href="#cutFrame" name="cutFrame"></a> </div>
-    <div class="frame-container"> <a id="catalogFrame" href="#catalogFrame" name="catalogFrame"></a> </div>
-    <div class="frame-container"> <a id="endFrame" href="#endFrame" name="endFrame"></a> </div>
+    <div id="iconProjectFrame" class="icon lb ch-item hide">
+        <div class="ch-info">
+            <h3>Проект</h3>
+            <p>Ииииха <a href="/">Сылка</a></p>
+        </div>
+        <div class="pulse2"></div>
+    </div>
 
+    <div id="iconCutFrame" class="icon rt ch-item hide">
+        <div class="ch-info">
+            <h3>Мотнаж</h3>
+            <p>Ииииха <a href="/">Сылка</a></p>
+        </div>
+        <div class="pulse2"></div>
+    </div>
+
+    <div id="iconCatalogFrame" class="icon rb ch-item hide">
+        <div class="ch-info">
+            <h3>Каталог</h3>
+            <p>Ииииха <a href="/">Сылка</a></p>
+        </div>
+        <div class="pulse2"></div>
+    </div>
+    </div>
+</div>
+<div class="frame-container bg-3"><a id="photoFrame" href="#photoFrame" name="photoFrame"></a></div>
+<div class="frame-container bg-3"><a id="projectFrame" href="#projectFrame" name="projectFrame"></a></div>
+<div class="frame-container bg-3"><a id="cutFrame" href="#cutFrame" name="cutFrame"></a></div>
+<div class="frame-container bg-3"><a id="catalogFrame" href="#catalogFrame" name="catalogFrame"></a></div>
+
+<div class="frame-container">
+    <a id="endFrame" href="#endFrame" name="endFrame"></a>
+    <div id="iconEndFrame" class="icon-main ch-item pos-ab">
+        <div class="pulse2"></div>
+        <div class="ch-info">
+            <h3>Main menu</h3>
+            <p>Ииииха <a href="/">Сылка</a></p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 
