@@ -29,13 +29,12 @@
     border-radius: 50%;
     cursor: pointer;
 
-    /*
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     -o-transition: all 0.1s;
     -ms-transition: all 0.1s;
     transition: all 0.1s;
-    */
+
 }
 
 .ch-info {
@@ -65,9 +64,9 @@
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 15px;
-    margin: 0 30px;
-    padding: 30px 0 0 0;
+    font-size: 10px;
+    margin: auto;
+    padding: 15px 0 0 0;
     height: 40%;
     font-family: Arial, sans-serif;
     text-shadow:
@@ -80,7 +79,7 @@
     padding: 7px 3px;
     font-style: italic;
     margin: 0 25px;
-    font-size: 12px;
+    font-size: 7px;
     border-top: 1px solid rgba(255,255,255,0.5);
     opacity: 0;
     -webkit-transition: all 1s ease-in-out 0.4s;
@@ -97,7 +96,7 @@
     font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 9px;
+    font-size: 7px;
     letter-spacing: 1px;
     padding-top: 4px;
     font-family: Arial, sans-serif;
@@ -133,9 +132,9 @@
 }
 
 .icon:hover{
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
 }
