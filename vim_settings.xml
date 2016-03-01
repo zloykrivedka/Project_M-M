@@ -2,14 +2,7 @@
   <component name="VimSettings">
     <state version="4" enabled="true" />
     <globalmarks />
-    <filemarks>
-      <file name="$USER_HOME$/IdeaProjects/Project_M-M/Project-M-end-M/src/index.html" timestamp="1456854527103">
-        <mark key="[" line="108" column="11" />
-      </file>
-      <file name="$USER_HOME$/IdeaProjects/Project_M-M/Project-M-end-M/src/js/main.js" timestamp="1456859081507">
-        <mark key="[" line="23" column="28" />
-      </file>
-    </filemarks>
+    <filemarks />
     <jumps />
     <registers>
       <register name="1" type="4">
