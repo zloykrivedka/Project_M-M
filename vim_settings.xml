@@ -2,32 +2,55 @@
   <component name="VimSettings">
     <state version="4" enabled="true" />
     <globalmarks />
-    <filemarks />
+    <filemarks>
+      <file name="$USER_HOME$/IdeaProjects/Project_M-M/Project-M-end-M/src/index.html" timestamp="1456861863933">
+        <mark key="[" line="110" column="0" />
+      </file>
+      <file name="$USER_HOME$/IdeaProjects/Project_M-M/Project-M-end-M/src/js/main.js" timestamp="1456861911080">
+        <mark key="[" line="25" column="40" />
+        <mark key="]" line="25" column="40" />
+        <mark key="." line="25" column="40" />
+      </file>
+      <file name="$USER_HOME$/IdeaProjects/Project_M-M/Project-M-end-M/src/css/icon/icon.css" timestamp="1456862391125">
+        <mark key="[" line="28" column="21" />
+        <mark key="]" line="28" column="21" />
+        <mark key="." line="28" column="21" />
+      </file>
+    </filemarks>
     <jumps />
     <registers>
       <register name="1" type="4">
-        <text>icon.</text>
+        <text>300</text>
       </register>
       <register name="&quot;" type="4">
-        <text>icon.</text>
+        <text>300</text>
       </register>
       <register name="2" type="4">
-        <text encoding="base64">CgouaWNvbg==</text>
+        <text>300px;</text>
       </register>
       <register name="3" type="4">
-        <text>g</text>
+        <text>-</text>
       </register>
       <register name="4" type="4">
-        <text>{</text>
+        <text>3</text>
       </register>
       <register name="5" type="4">
-        <text>5:50:54 Clone failed: Could not read from remote repository.
-5:52:31 Clone failed: Could not read from remote repository.
-5:52:39 Clone failed: Could not read from remote repository.
-5:52:56 Clone failed: Could not read from remote repository.</text>
+        <text>0</text>
+      </register>
+      <register name="6" type="4">
+        <text>%</text>
+      </register>
+      <register name="7" type="4">
+        <text>;</text>
+      </register>
+      <register name="8" type="4">
+        <text>ic</text>
+      </register>
+      <register name="9" type="4">
+        <text>icon.</text>
       </register>
       <register name="-" type="4">
-        <text>icon.</text>
+        <text>300</text>
       </register>
     </registers>
     <search>
@@ -41,11 +64,17 @@
       <history-input />
     </history>
     <shortcut-conflicts>
-      <shortcut-conflict owner="vim">
+      <shortcut-conflict owner="ide">
         <text>ctrl pressed V</text>
       </shortcut-conflict>
-      <shortcut-conflict owner="vim">
+      <shortcut-conflict owner="ide">
         <text>ctrl pressed S</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed C</text>
+      </shortcut-conflict>
+      <shortcut-conflict owner="ide">
+        <text>ctrl pressed X</text>
       </shortcut-conflict>
     </shortcut-conflicts>
   </component>
