@@ -1,54 +1,50 @@
+
+
 $(window).scroll(function (e) {
-
-    //var bgScale = (($(window).scrollTop()) / $(window).height())+1;
-    //bgZoom(bgScale);
     moveIcons();
-
 });
 
-function bgZoom(bgScale){
-    if(bgScale >= 2){
-        bgScale = 2;
-    }
-    $(".bg-container").css("transform", "scale(" + bgScale + ")");
-}
+var lastScrollPosition = 0;
 
 function moveIcons(){
-
     var scrollTop = $(window).scrollTop();
+    var scrollPositionMainFrame = $('#mainFrame').offset().top;
 
-    var scrollPosition =  scrollTop /  $('#mainFrame').offset().top;
-    scrollPosition = scrollPosition*100;
-    console.log(scrollPosition, scrollTop);
-    if (scrollPosition >= 100) {
-        scrollPosition = 100;
+    var a = scrollPositionMainFrame - scrollTop;
+    var b = scrollPositionMainFrame;
+    var iconPosition = a / b;
+    iconPosition = iconPosition * 100;
+	if(iconPosition > 5){
+	var ic = lastScrollPosition - iconPosition;
+	}
+
+    console.log(iconPosition, lastScrollPosition, ic);
+
+   if (iconPosition < 5) {
+        iconPosition = 5;
     }
 
-    //$('.lt').css("margin-left", scrollPosition / 3 + "%");
-    //$('.lt').css("margin-top", scrollPosition / 7 + "%");
+    $('.lt').css("margin-right", "+="+ ic + "%");
+    $('.lt').css("margin-bottom", "-="+ ic + "%");
 
-    $('.lt-bg').css("margin-left", scrollPosition / 3 + "%");
-    $('.lt-bg').css("margin-top", scrollPosition / 15 + "%");
+    /*
+    $('.rt').css("margin-left", iconPosition*10 + "%");
+    $('.rt').css("margin-bottom", iconPosition*3 + "%");
 
-    $('.lb').css("margin-left", scrollPosition / 5 + "%");
-    $('.lb').css("margin-bottom", scrollPosition / 7 + "%");
+    $('.lb').css("margin-left", iconPosition*12 + "%");
+    $('.lb').css("margin-bottom", iconPosition  + "%");
 
-    $('.rt').css("margin-right", scrollPosition / 3 + "%");
-    $('.rt').css("margin-top", scrollPosition / 7 + "%");
-
-    $('.rb').css("margin-right", scrollPosition / 5 + "%");
-    $('.rb').css("margin-bottom", scrollPosition / 7 + "%");
+    $('.rb').css("margin-right", iconPosition*12 + "%");
+    $('.rb').css("margin-bottom", iconPosition  + "%");
+    */
 
     if (scrollTop > $('#midFrame').offset().top) {
-        //$('#icon-bg-1').removeClass('hide');
-
         $('#iconStartFrame').addClass('hide');
     } else {
-        //$('#icon-bg-1').addClass('hide');
         $('#iconStartFrame').removeClass('hide');
     }
 
-    if(scrollPosition > 80){
+    if(iconPosition < 15){
         $('#iconPhotoFrame').removeClass('hide');
         $('#iconProjectFrame').removeClass('hide');
         $('#iconCatalogFrame').removeClass('hide');
@@ -60,27 +56,47 @@ function moveIcons(){
         $('#iconCutFrame').addClass('hide');
     }
 
+    if(iconPosition < -100){
+        $('.icon-bg-container').addClass('hide');
+    } if(iconPosition > -100){
+        $('.icon-bg-container').removeClass('hide');
+    }
+
     if (scrollTop >= $('#mainFrame').offset().top) {
-       // $('.icon').css('position', 'absolute');
         $('.icon-bg-container').css('position', 'absolute');
         $('#iconBackToMain').removeClass('hide');
-    }
-    if (scrollTop < $('#mainFrame').offset().top) {
-        //$('.icon').css('position', 'fixed');
+    } if (scrollTop < $('#mainFrame').offset().top) {
         $('.icon-bg-container').css('position', 'fixed');
         $('#iconBackToMain').addClass('hide');
     }
+	lastScrollPosition = iconPosition;
+}
+
+function pageResize(){
+
+    var winHeight = $(window).height();
+    var winWidth =  $(window).width();
+
+    if(winHeight <= 800 && winWidth <=600){
+        winHeight = 800;
+        winWidth = 600;
+    }
+
+    $('.frame-container').css('height', winHeight + 'px');
+    $('.frame-container').css('width', winWidth + 'px');
+
+    $('.frame-content-container').css('height', winHeight * 4 + 'px');
+    $('.frame-content-container').css('width', winWidth * 0.8 + 'px');
 }
 
 $(document).ready(function () {
-    //moveIcons();
-
-    $('.frame-container').css('height', $(window).height() + 'px');
-    $('.frame-container').css('width', $(window).width() + 'px');
-
-    $('.frame-content-container').css('height', $(window).height() * 2 + 'px');
-    $('.frame-content-container').css('width', $(window).width() * 0.8 + 'px');
+    moveIcons();
+    pageResize();
 });
+
+window.onresize = function(){
+    pageResize();
+};
 
 //Event push icons
 $(function () {

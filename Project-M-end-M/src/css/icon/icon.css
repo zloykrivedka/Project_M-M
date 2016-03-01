@@ -1,12 +1,17 @@
-body {background-color: #000000;}
+body {
+    background-color: #000000;
+}
 
-.icon{
+.icon {
     position: absolute;
     width: 100px;
     height: 100px;
     background: url(../../img/icons-img/icon1.png) no-repeat;
     background-size: 100px 100px;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     margin: auto;
     z-index: 100;
     -webkit-border-radius: 50%;
@@ -16,7 +21,59 @@ body {background-color: #000000;}
     /* border-radius: 999px; */
 }
 
-.icon-back-to-main{
+.icon-bg-container {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    z-index: 300;
+    background-size: 300px 300px;
+}
+
+@media (max-width: 1024px) {
+    .icon {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        background: url(../../img/icons-img/icon1.png) no-repeat;
+        background-size: 70px 70px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        z-index: 100;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        /* border-radius: 50% has issues on some mobile browsers */
+        /* border-radius: 999px; */
+    }
+
+    .icon-bg-container {
+        position: fixed;
+        width: 250px;
+        height: 250px;
+        z-index: 300;
+        background-size: 250px 250px;
+    }
+}
+
+@media (max-width: 800px) {
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+    }
+
+    .icon-bg-container {
+        width: 150px;
+        height: 150px;
+        z-index: 300;
+        background-size: 150px 150px;
+    }
+}
+
+.icon-back-to-main {
     position: fixed;
     width: 80px;
     height: 80px;
@@ -24,16 +81,22 @@ body {background-color: #000000;}
     margin-left: 2%;
     margin-top: 5%;
     background-size: 80px 80px;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
-.icon-main{
+.icon-main {
     position: absolute;
     width: 250px;
     height: 250px;
     background: url(../../img/icons-img/bulb-1.png) no-repeat;
     background-size: 250px 250px;
-    top: 0; left: 0; bottom: 0; right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     margin: auto;
     z-index: 5;
     -webkit-border-radius: 999px;
@@ -41,70 +104,81 @@ body {background-color: #000000;}
     border-radius: 999px;
 }
 
-.icon-bg-container{
-    position: fixed;
-    background: url(../../img/icons-img/bg-icons/catalog-bg.png) no-repeat;
-    background-size: 300px 300px;
-    width: 300px;
-    height: 300px;
-    z-index: 3;
-    top: 0; left: 0; bottom: 0; right: 0;
+.icon-bg-container.icon-bg-img-1 {
+    background-image: url("../../img/icons-img/bg-icons/catalog-bg.png");
+}
 
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+.icon-bg-container.icon-bg-img-2 {
+    background-image: url("../../img/icons-img/bg-icons/montaz.png");
+}
+
+.icon-bg-container.icon-bg-img-3 {
+    background-image: url("../../img/icons-img/bg-icons/montaz.png");
+}
+
+.icon-bg-container.icon-bg-img-4 {
+    background-image: url("../../img/icons-img/bg-icons/montaz.png");
 }
 
 .icon-img-1 {
-    background-image: url(../../img/icons-img/bulb-1.png);
+    background-image: url("../../img/icons-img/bulb-1.png");
 }
 
-.icon.hide{
+.icon.hide {
     display: none;
 }
 
-.lt-bg{
-    margin-left: 0%;
-    margin-top: 0%;
+.lt {
+    margin-right: -30%;
+    margin-bottom: 100%;
+    bottom: 0;
+    right: 0;
 }
 
-.icon.lb{
+.lb {
     margin-left: 0%;
     margin-bottom: 0%;
+    bottom: 0;
+    left: 0;
 }
 
-.icon.rt{
+.rt {
     margin-right: 0%;
     margin-top: 0%;
+    bottom: 0;
+    left: 0;
 }
 
-
-.icon.rb{
+.rb {
     margin-right: 0%;
     margin-bottom: 0%;
+    bottom: 0;
+    right: 0;
 }
 
-.icon-social{
-    left: 0; right: 0; bottom: 0;
+.icon-social {
+    left: 0;
+    right: 0;
+    bottom: 0;
     margin: 3px 3px 3px 3px;
     height: 60px;
     width: 60px;
     cursor: pointer;
 }
 
-
 .icon-title-start {
     margin-top: 15%;
     width: auto;
     height: 40px;
-    top: 22%; left: 0; bottom: 0; right: 0;
+    top: 22%;
+    left: 0;
+    bottom: 0;
+    right: 0;
     color: #ffffff;
     font-size: 150%;
 }
 
-.icon-title-back{
+.icon-title-back {
     width: auto;
     height: 40px;
     margin-top: 15%;
