@@ -23,7 +23,6 @@
     <!--Icon effects-->
     <link rel="stylesheet" href="css/icon/icon.css"/>
     <link rel="stylesheet" href="css/icon/icon-pulse-effect.css"/>
-    <link rel="stylesheet" href="css/icon/icon-hover-effect.css"/>
 
     <link rel="stylesheet" href="css/window-modal.css"/>
     <link rel="stylesheet" href="css/main.css"/>
@@ -40,15 +39,18 @@
 </head>
 <body>
 
+<!--Background container-->
+<div class="bg-container" id="bg-container"></div>
+
 <!--Fixed bottom container for social network-->
 <div id="endPageDivSocial" class="navbar-fixed-bottom-right icon-social-container">
-    <a onclick="FBShare()"><img class="icon-social" src="img/icons-img/facebook-icon.png"/></a>
+    <a onclick="FBShare()"><img class="icon-social-network" src="img/icons-img/facebook-icon.png"/></a>
     <a href="https://twitter.com/intent/tweet?text=Look at our project!&amp;url=http://project-m.com&amp;hashtags=ProjectM,loveme">
-        <img class="icon-social" src="img/icons-img/twitter-icon.png"/>
+        <img class="icon-social-network" src="img/icons-img/twitter-icon.png"/>
     </a>
 
     <a href="http://vk.com/share.php?url=http://project-m.com" target="_blank">
-        <img class="icon-social" src="img/icons-img/vk-icon.png"/>
+        <img class="icon-social-network" src="img/icons-img/vk-icon.png"/>
     </a>
 </div>
 
@@ -88,38 +90,27 @@
     </div><!-- /.container -->
 </nav><!-- /.navbar -->
 
-<!--Background container-->
-<div class="bg-container" id="bg-container"></div>
-
 <!-- Start Frame Container-->
 <div class="frame-container" id="main-frame-cantainer">
     <a id="startFrame" href="#startFrame" name="startFrame"></a>
-    <div class="title-start">Материалы и Механизмы</div>
-    <div id="iconStartFrame" class="icon-main ch-item pos-ab">
+    <div class="title-start" id="title-start">Материалы и Механизмы</div>
+    <div id="iconStartFrame" class="icon-start ch-item pos-ab">
         <div class="pulse"></div>
-        <div class="ch-info">
-            <h3>Start</h3>
-            <p>Ииииха <a href="/">Сылка</a></p>
-        </div>
     </div>
 </div>
 
 <!-- Mid Frame Container-->
-<div class="frame-container">
-    <a id="midFrame" href="#midFrame" name="midFrame"></a>
-</div>
+<div class="frame-container"><a id="midFrame" href="#midFrame" name="midFrame"></a></div>
 
 <!-- Mid2 Frame Container-->
-<div class="frame-container">
-    <a id="midFrame2" href="#midFrame2" name="midFrame2"></a>
-</div>
+<div class="frame-container"><a id="midFrame2" href="#midFrame2" name="midFrame2"></a></div>
 
 <!-- Main Frame Container-->
 <div class="frame-container">
     <a id="mainFrame" href="#mainFrame" name="mainFrame"></a>
 
     <!--Portfolio icon-->
-    <div class="icon-bg-container icon-bg-img-1 lt" id="icon-bg-1">
+    <div class="icon-bg-container icon-bg-img-1 lt " id="icon-bg-1">
         <div id="iconPhotoFrame" class="icon ch-item hide">
             <div class="ch-info">
                 <h3>Фото-Галерея</h3>
@@ -131,7 +122,7 @@
 
     <!--Project icon-->
     <div class="icon-bg-container icon-bg-img-1 lb" id="icon-bg-2">
-        <div id="iconProjectFrame" class="icon  ch-item hide">
+        <div id="iconProjectFrame" class="icon ch-item hide">
             <div class="ch-info">
                 <h3>Проект</h3>
                 <p>Ииииха <a href="/">Сылка</a></p>
@@ -165,42 +156,42 @@
 </div>
 
 <!-- Photo Gallery Frame Container-->
-<div class="rip"><a id="photoFrame" href="#photoFrame" name="photoFrame"></a></a></div>
+<div class="frame-riper"><a id="photoFrame" href="#photoFrame" name="photoFrame"></a></div>
 <div class="frame-content-container bg-3">
     <div class="title-content">Фотог-галерея</div>
     <hr>
+    </div>
 </div>
 
 <!-- Projecting Frame Container-->
-<div class="rip"><a id="projectFrame" href="#projectFrame" name="projectFrame"></a></div>
+<div class="frame-riper"><a id="projectFrame" href="#projectFrame" name="projectFrame"></a></div>
 <div class="frame-content-container bg-3">
     <div class="title-content">Проектирование</div>
     <hr>
 </div>
 
 <!-- Cut Frame Container-->
-<div class="rip"><a id="cutFrame" href="#cutFrame" name="cutFrame"></a></div>
+<div class="frame-riper"><a id="cutFrame" href="#cutFrame" name="cutFrame"></a></div>
 <div class="frame-content-container bg-3">
     <div class="title-content">Монтажные работы</div>
     <hr>
 </div>
 
 <!-- Catalog Frame Container-->
-<div class="rip"><a id="catalogFrame" href="#catalogFrame" name="catalogFrame"></a></div>
+<div class="frame-riper"><a id="catalogFrame" href="#catalogFrame" name="catalogFrame"></a></div>
 <div class="frame-content-container bg-3">
     <div class="title-content">Каталог товаров</div>
     <hr>
 </div>
 
 <!-- End Page Frame Container-->
-<div class="frame-container">
-    <a id="endFrame" href="#endFrame" name="endFrame"></a>
-    <div id="iconEndFrame" class="icon-main ch-item">
-        <div class="pulse"></div>
-        <div class="ch-info">
-            <h3>Main menu</h3>
-            <p>Ииииха <a href="/">Сылка</a></p>
-        </div>
+<div class="frame-riper"><a id="endFrame" href="#endFrame" name="endFrame"></a></div>
+<div class="frame-content-container bg-3">
+    <div class="title-content">Карта</div>
+    <hr>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d587.7322643877451!2d27.552164745722084!3d53.89746486035124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1454233785854"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 </div>
 
@@ -212,6 +203,7 @@
         <p>Ииииха <a href="/">Сылка</a></p>
     </div>
 </div>
+
 </body>
 </html>
 
