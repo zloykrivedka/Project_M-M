@@ -52,36 +52,47 @@ body {
 }
 
 .icon-bg-container.lt {
-    margin-right: 0%;
-    margin-bottom: 0%;
-    bottom: 0;
-    left: 0;
+    margin-right: 0%;  margin-bottom: 0%;
+    bottom: 0;  left: 0;
+}
+
+.icon-bg-container.lt-2 {
+    margin-right: 0%;  margin-bottom: 0%;
+    bottom: 0;  left: 0;
 }
 
 .icon-bg-container.rt {
-    margin-right: 0%;
-    margin-top: 0%;
-    bottom: 0;
-    right: 0;
+    margin-right: 0%;  margin-top: 0%;
+    bottom: 0;  right: 0;
+}
+
+.icon-bg-container.rt-2 {
+    margin-right: 0%;  margin-top: 0%;
+    bottom: 0;  right: 0;
 }
 
 .icon-bg-container.lb {
-    margin-left: 0%;
-    margin-bottom: 0%;
-    bottom: 0;
-    left: 0;
+    margin-left: 0%;  margin-bottom: 0%;
+    bottom: 0;  left: 0;
+}
+
+.icon-bg-container.lb-2 {
+    margin-left: 0%;  margin-bottom: 0%;
+    bottom: 0;  left: 0;
 }
 
 .icon-bg-container.rb {
-    margin-right: 0%;
-    margin-bottom: 0%;
-    bottom: 0;
-    right: 0;
+    margin-right: 0%;  margin-bottom: 0%;
+    bottom: 0;  right: 0;
+}
+
+.icon-bg-container.rb-2 {
+    margin-right: 0%;  margin-bottom: 0%;
+    bottom: 0;  right: 0;
 }
 
 .icon-social-container {
-    right: 0;
-    bottom: 0;
+    right: 0;  bottom: 0;
     margin: 10px 10px 10px 10px;
     width: auto;
 }
@@ -92,10 +103,7 @@ body {
     height: 250px;
     background: url(../../img/icons-img/bulb-1.png) no-repeat;
     background-size: 250px 250px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 0;  left: 0;  bottom: 0;  right: 0;
     margin: auto;
     z-index: 5;
     -webkit-border-radius: 999px;
@@ -111,19 +119,13 @@ body {
     margin-left: 10px;
     margin-top: 55px;
     background-size: 50px 50px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 0;  left: 0;  bottom: 0;  right: 0;
 }
 
 .icon-social-network {
-    left: 0;
-    right: 0;
-    bottom: 0;
+    left: 0;  right: 0;  bottom: 0;
     margin: 3px 3px 3px 3px;
-    height: 60px;
-    width: 60px;
+    height: 60px;  width: 60px;
     cursor: pointer;
 }
 
@@ -133,7 +135,6 @@ body {
     -o-transition: all 1s ease-in-out;
     -ms-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-
     opacity: 0;
 }
 
@@ -143,7 +144,6 @@ body {
     -o-transition: all 0.4s ease-in-out;
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
-
     opacity: 1;
 }
 

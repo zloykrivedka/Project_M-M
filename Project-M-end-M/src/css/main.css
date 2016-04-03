@@ -26,13 +26,10 @@
 
 .map-container {
     position: relative;
-    width: 70%;
-    height: 70%;
+    width: 70%; height: 70%;
+    left: 0; right: 0;  bottom: 0;  top: 30px;
     margin: auto;
-    left: 0;
-    right: 0;
-    top: 30px;
-    bottom: 0;
+
 }
 
 .frame-riper {
@@ -48,8 +45,7 @@
 .title-start{
     position: absolute;
     z-index: 3;
-    width: 100%;
-    height: auto;
+    width: 100%; height: auto;
     text-align: center;
     margin-top: 7%;
     font-size: 70px;

@@ -13,16 +13,19 @@ window.onresize = function () {
     pageResize();
 };
 
-function moveIcons(){
+function moveIcons() {
     var scrollTop = $(window).scrollTop();
     var positionMainFrame = $('#mainFrame').offset().top;
 
     var a = positionMainFrame - scrollTop;
-    var b = positionMainFrame*2.5;
-    var iconPosition = (a / b) * 100;
+    var b = positionMainFrame * 2.5;
+
+    var iconPosition2;
+    var iconPosition = iconPosition2 = (a / b) * 100;
+
     console.log(iconPosition);
 
-    if (iconPosition < 10) {
+    if (iconPosition <= 10) {
         iconPosition = 10;
     }
 
@@ -33,11 +36,26 @@ function moveIcons(){
     $('.rt').css("margin-bottom", iconPosition * 2 + "%");
 
     $('.lb').css("margin-left", iconPosition * 6 + "%");
-    $('.lb').css("margin-bottom", iconPosition  + "%");
+    $('.lb').css("margin-bottom", iconPosition + "%");
 
     $('.rb').css("margin-right", iconPosition * 6 + "%");
-    $('.rb').css("margin-bottom", iconPosition  + "%");
+    $('.rb').css("margin-bottom", iconPosition + "%");
 
+    if(iconPosition2 <= 8){
+        iconPosition2 = 8;
+    }
+
+    $('.lt-2').css("margin-left", iconPosition2 * 5.87 + "%");
+    $('.lt-2').css("margin-bottom", iconPosition2 * 2.5 + "%");
+
+    $('.rt-2').css("margin-right", iconPosition2 * 5.87 + "%");
+    $('.rt-2').css("margin-bottom", iconPosition2 * 2.5 + "%");
+
+    $('.lb-2').css("margin-left", iconPosition2 * 7.5 + "%");
+    $('.lb-2').css("margin-bottom", iconPosition2 * 1.25 + "%");
+
+    $('.rb-2').css("margin-right", iconPosition2 * 7.5 + "%");
+    $('.rb-2').css("margin-bottom", iconPosition2 * 1.25 + "%");
 
     if (scrollTop > $('#midFrame').offset().top) {
         $('#iconStartFrame').addClass('hide');
