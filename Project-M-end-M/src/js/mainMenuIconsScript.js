@@ -1,17 +1,10 @@
+/**
+ * Created by midnight on 4/5/2016.
+ */
 
+$(document).ready(function () {moveIcons();});
 
-$(window).scroll(function () {
-    moveIcons();
-});
-
-$(document).ready(function () {
-    moveIcons();
-    pageResize();
-});
-
-window.onresize = function () {
-    pageResize();
-};
+$(window).scroll(function () {moveIcons();});
 
 function moveIcons() {
     var scrollTop = $(window).scrollTop();
@@ -107,24 +100,6 @@ function moveIcons() {
     }
 }
 
-function pageResize(){
-
-    var winHeight = $(window).height();
-    var winWidth =  $(window).width();
-
-    if(winHeight <= 800 && winWidth <=600){
-        winHeight = 800;
-        winWidth = 600;
-    }
-
-    $('.frame-container').css('height', winHeight + 'px');
-    $('.frame-container').css('width', winWidth + 'px');
-
-    $('.frame-content-container').css('height', winHeight + 'px');
-    $('.frame-content-container').css('width', winWidth*0.9 + 'px');
-}
-
-
 //Event push icons
 $(function () {
     $('#iconStartFrame').click(function () {
@@ -155,3 +130,4 @@ $(function () {
         $.scrollTo('#mainFrame', 300);
     });
 });
+
