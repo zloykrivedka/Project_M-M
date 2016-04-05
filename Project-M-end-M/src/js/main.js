@@ -47,15 +47,19 @@ function moveIcons() {
 
     $('.lt-2').css("margin-left", iconPosition2 * 5.87 + "%");
     $('.lt-2').css("margin-bottom", iconPosition2 * 2.5 + "%");
+    $('.lt-2').css('transform', 'rotate('+iconPosition2*5+'deg)');
 
     $('.rt-2').css("margin-right", iconPosition2 * 5.87 + "%");
     $('.rt-2').css("margin-bottom", iconPosition2 * 2.5 + "%");
+    $('.rt-2').css('transform', 'rotate(-'+iconPosition2*4.5+'deg)');
 
     $('.lb-2').css("margin-left", iconPosition2 * 7.5 + "%");
     $('.lb-2').css("margin-bottom", iconPosition2 * 1.25 + "%");
+    $('.lb-2').css('transform', 'rotate('+iconPosition2*6+'deg)');
 
     $('.rb-2').css("margin-right", iconPosition2 * 7.5 + "%");
     $('.rb-2').css("margin-bottom", iconPosition2 * 1.25 + "%");
+    $('.rb-2').css('transform', 'rotate(-'+iconPosition2*3+'deg)');
 
     if (scrollTop > $('#midFrame').offset().top) {
         $('#iconStartFrame').addClass('hide');
