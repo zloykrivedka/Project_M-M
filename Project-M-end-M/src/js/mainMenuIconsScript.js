@@ -103,7 +103,7 @@ function moveIcons() {
 //Event push icons
 $(function () {
     $('#iconStartFrame').click(function () {
-        $.scrollTo('#mainFrame', 5000);
+        $.scrollTo('#mainFrame', 10000);
         $('#iconStartFrame').removeClass('show-icon');
         $('#title-start').removeClass('show-icon');
         $('#iconStartFrame').addClass('hide-icon');
