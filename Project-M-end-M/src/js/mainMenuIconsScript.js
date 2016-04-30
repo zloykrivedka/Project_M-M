@@ -16,8 +16,6 @@ function moveIcons() {
     var iconPosition2;
     var iconPosition = iconPosition2 = (a / b) * 100;
 
-    console.log(iconPosition);
-
     if (iconPosition <= 10) {
         iconPosition = 10;
     }
@@ -91,10 +89,10 @@ function moveIcons() {
         $('#iconCutFrame').addClass('hide');
     }
 
-    if (scrollTop >= $('#mainFrame').offset().top) {
+    if (scrollTop > $('#mainFrame').offset().top + 5) {
         $('.icon-bg-container').css('position', 'absolute');
         $('#iconBackToMain').removeClass('hide');
-    } if (scrollTop < $('#mainFrame').offset().top) {
+    } if (scrollTop < $('#mainFrame').offset().top + 5) {
         $('.icon-bg-container').css('position', 'fixed');
         $('#iconBackToMain').addClass('hide');
     }

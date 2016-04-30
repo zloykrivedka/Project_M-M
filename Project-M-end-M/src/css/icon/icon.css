@@ -122,12 +122,12 @@ body {
 
 .icon-back-to-main {
     position: fixed;
-    background: url(../../img/icons-img/up.png) no-repeat;
-    background-size: 50px 50px;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    width: 25pt;
+    height: 25pt;
+    background: url(../../img/icons-img/up.png) no-repeat center;
+    background-size: 25pt 25pt;
+    margin-top: 55pt;
+    margin-left: 10pt;
 }
 
 .splash-back-to-main:hover {
