@@ -19,7 +19,7 @@ function FBShare()
     FB.ui(
         {
             method: 'share',
-            href: 'http://project-m.com/'
+            href: 'http://musicshare.com/'
         }, function(response){});
 };
 
@@ -30,7 +30,7 @@ function FBShareToOpenGraph()
             method: 'share_open_graph',
             action_type: 'og.likes',
             action_properties: JSON.stringify({
-                object:'https://project-m.com/',
+                object:'https://musicshaer.com/',
             })
         }, function(response){});
 };
