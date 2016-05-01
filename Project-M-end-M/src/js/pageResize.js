@@ -12,11 +12,11 @@ function pageResize(){
         winWidth = 600;
     }
 
-    $('.frame-container').css('height', winHeight + 'px');
-    $('.frame-container').css('width', winWidth + 'px');
-
-    $('.frame-content-container').css('height', winHeight + 'px');
-    $('.frame-content-container').css('width', winWidth*0.9 + 'px');
+    //$('.frame-container').css('height', winHeight + 'px');
+    //$('.frame-container').css('width', winWidth + 'px');
+    //
+    //$('.frame-content-container').css('height', winHeight + 'px');
+    //$('.frame-content-container').css('width', winWidth*0.9 + 'px');
 }
 
 
