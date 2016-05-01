@@ -110,24 +110,24 @@ $(function () {
         $('#title-start').addClass('hide-icon');
     });
 
-    $('#iconProjectFrame').click(function () {
-        $.scrollTo('#projectFrame', animationDuration);
+    $('#playersLink').click(function () {
+        $.scrollTo('#playersBlock', animationDuration);
     });
 
-    $('#iconCatalogFrame').click(function () {
-        $.scrollTo('#catalogFrame', animationDuration);
+    $('#headphonesLink').click(function () {
+        $.scrollTo('#headphonesBlock', animationDuration);
     });
 
-    $('#iconCutFrame').click(function () {
-        $.scrollTo('#cutFrame', animationDuration);
+    $('#guitarsLink').click(function () {
+        $.scrollTo('#guitarsBlock', animationDuration);
     });
 
-    $('#iconPhotoFrame').click(function () {
-        $.scrollTo('#photoFrame', animationDuration);
+    $('#implifaiersLink').click(function () {
+        $.scrollTo('#implifaiersBlock', animationDuration);
     });
 
-    $('#iconBackToMain').click(function () {
-        $.scrollTo('#mainFrame', animationDuration);
+    $('#contactLink').click(function () {
+        $.scrollTo('#contactBlock', animationDuration);
     });
 });
 

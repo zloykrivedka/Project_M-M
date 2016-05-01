@@ -16,7 +16,8 @@
     background-color: white;
     border: none;
     height: 2px;
-    border-radius: 1px;
+    border-radius: 2px;
+    width: 80%;
 }
 
 .map-container {
@@ -59,6 +60,39 @@
 
 .phone-number-container{
     margin: 10px 10px 10px 10px;
+}
+
+.good-container{
+    display: inline-block;
+    margin: 10pt;
+}
+
+.good-header{
+    display: block;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18pt;
+    color: lightgrey;
+}
+
+.good-description{
+    display: inline-block;
+    margin: 10pt;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12pt;
+    color: lightgrey;
+    max-width: 160pt;
+    vertical-align: top;
+}
+
+.good-image{
+    display: inline-block;
+    margin: 10pt;
+    height: 100pt;
+    width: 100pt;
+}
+
+.frame-riper a:hover{
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {
