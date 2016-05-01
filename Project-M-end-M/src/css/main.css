@@ -8,6 +8,7 @@
 .frame-content-container{
     position: relative;
     margin: auto;
+    width: 85%;
     border-radius: 2px;
 }
 
@@ -15,7 +16,6 @@
     background-color: white;
     border: none;
     height: 2px;
-    width: 80%;
     border-radius: 1px;
 }
 

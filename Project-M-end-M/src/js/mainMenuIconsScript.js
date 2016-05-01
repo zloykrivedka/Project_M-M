@@ -1,6 +1,7 @@
 /**
  * Created by midnight on 4/5/2016.
  */
+const animationDuration = 1000;
 
 $(document).ready(function () {moveIcons();});
 
@@ -101,7 +102,8 @@ function moveIcons() {
 //Event push icons
 $(function () {
     $('#iconStartFrame').click(function () {
-        $.scrollTo('#mainFrame', 10000);
+
+        $.scrollTo('#mainFrame', animationDuration);
         $('#iconStartFrame').removeClass('show-icon');
         $('#title-start').removeClass('show-icon');
         $('#iconStartFrame').addClass('hide-icon');
@@ -109,23 +111,23 @@ $(function () {
     });
 
     $('#iconProjectFrame').click(function () {
-        $.scrollTo('#projectFrame', 500);
+        $.scrollTo('#projectFrame', animationDuration);
     });
 
     $('#iconCatalogFrame').click(function () {
-        $.scrollTo('#catalogFrame', 500);
+        $.scrollTo('#catalogFrame', animationDuration);
     });
 
     $('#iconCutFrame').click(function () {
-        $.scrollTo('#cutFrame', 500);
+        $.scrollTo('#cutFrame', animationDuration);
     });
 
     $('#iconPhotoFrame').click(function () {
-        $.scrollTo('#photoFrame', 500);
+        $.scrollTo('#photoFrame', animationDuration);
     });
 
     $('#iconBackToMain').click(function () {
-        $.scrollTo('#mainFrame', 300);
+        $.scrollTo('#mainFrame', animationDuration);
     });
 });
 

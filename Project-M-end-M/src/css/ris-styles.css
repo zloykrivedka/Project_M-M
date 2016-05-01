@@ -1,8 +1,9 @@
 .ris-image{
     position: relative;
     margin: 5pt;
-    width: 400pt;
-    height: 300pt;
+    width: 300pt;
+    height: 270pt;
     vertical-align: middle;
+    horiz-align: center;
     border-radius: 2px;
 }
