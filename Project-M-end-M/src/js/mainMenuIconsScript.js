@@ -129,5 +129,9 @@ $(function () {
     $('#contactLink').click(function () {
         $.scrollTo('#contactBlock', animationDuration);
     });
+
+    $('#iconBackToMain').click(function () {
+        $.scrollTo('#mainFrame', animationDuration);
+    });
 });
 
