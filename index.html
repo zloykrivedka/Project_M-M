@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="title" content="Project M&M"/>
+    <meta name="description" content="Vladimir's very first and ver own project."/>
+    <link rel="image_src" href="http://mysite.com/mypic.jpg"/>
+
+    <meta property="og:url" content="http://project-m.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Project M"/>
+    <meta property="og:description" content="Very own and personal site"/>
+    <meta property="og:image" content="http://www.project-m.com/path/image.jpg"/>
+
+    <title></title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!--Background zoom effect-->
+    <link rel="stylesheet" href="css/background/bg-zoom-effect.css" media="screen" type="text/css"/>
+
+    <!--Icon effects-->
+    <link rel="stylesheet" href="css/icon/icon.css"/>
+    <link rel="stylesheet" href="css/icon/icon-pulse-effect.css"/>
+
+    <link rel="stylesheet" href="css/main.css"/>
+
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1.js"></script>
+    <script type="text/javascript" src="js/pageResize.js"></script>
+    <script type="text/javascript" src="js/mainMenuIconsScript.js"></script>
+
+    <!--Social nets-->
+    <script type="text/javascript" src="js/ShareSocialNetwork/facebook-share.js" charset="windows-1251"></script>
+    <script type="text/javascript" src="js/ShareSocialNetwork/twitter-share.js" charset="windows-1251"></script>
+
+</head>
+<body>
+
+<!--Background container-->
+<div class="bg-container" id="bg-container"></div>
+
+<!--Fixed bottom container for social network-->
+<div id="endPageDivSocial" class="navbar-fixed-bottom-right icon-social-container">
+    <a onclick="FBShare()"><img class="icon-social-network" src="img/icons-img/facebook-icon.png"/></a>
+
+    <a href="https://twitter.com/intent/tweet?text=Look at our project!&amp;url=http://project-m.com&amp;hashtags=ProjectM,loveme">
+        <img class="icon-social-network" src="img/icons-img/twitter-icon.png"/>
+    </a>
+
+    <a href="http://vk.com/share.php?url=http://project-m.com" target="_blank">
+        <img class="icon-social-network" src="img/icons-img/vk-icon.png"/>
+    </a>
+</div>
+
+<!--Fixed top menu-->
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project M&M</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#home" id="home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <div class="navbar-fixed-bottom-right phone-number-container">
+                        <h4 style="color: red">Наш телефон: <a href="tel:+375291338017">+37529 113-80-17</a></h4>
+                    </div>
+                </li>
+            </ul>
+        </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+</nav><!-- /.navbar -->
+
+<!-- Start Frame Container-->
+<div class="frame-container" id="main-frame-cantainer">
+    <a id="startFrame" href="#startFrame" name="startFrame"></a>
+    <div class="title-start" id="title-start">Материалы и Механизмы</div>
+    <div id="iconStartFrame" class="icon-start ch-item pos-ab">
+        <div class="pulse"></div>
+    </div>
+</div>
+
+<!-- Mid Frame Container-->
+<div class="frame-container"><a id="midFrame" href="#midFrame" name="midFrame"></a></div>
+
+<!-- Mid2 Frame Container-->
+<div class="frame-container"><a id="midFrame2" href="#midFrame2" name="midFrame2"></a></div>
+
+<!-- Main Frame Container-->
+<div class="frame-container">
+    <a id="mainFrame" href="#mainFrame" name="mainFrame"></a>
+
+    <!--Portfolio icon-->
+    <div class="icon-bg-container icon-bg-img-1 lt-2 " id="icon-bg-1b"></div>
+    <div class="icon-bg-container icon-bg-img-1 lt " id="icon-bg-1">
+        <div id="iconPhotoFrame" class="icon ch-item hide">
+            <div class="ch-info">
+                <h3>Фото-Галерея</h3>
+                <p>Ииииха <a href="/">Сылка</a></p>
+            </div>
+            <div class="pulse"></div>
+        </div>
+    </div>
+
+    <!--Cut icon-->
+    <div class="icon-bg-container icon-bg-img-2 rt-2" id="icon-bg-3b"></div>
+    <div class="icon-bg-container icon-bg-img-2 rt" id="icon-bg-3">
+        <div id="iconCutFrame" class="icon ch-item hide">
+            <div class="ch-info">
+                <h3>Мотнаж</h3>
+                <p>Ииииха <a href="/">СcCылка</a></p>
+            </div>
+            <div class="pulse"></div>
+        </div>
+    </div>
+
+    <!--Project icon-->
+    <div class="icon-bg-container icon-bg-img-1 lb-2" id="icon-bg-2b"></div>
+    <div class="icon-bg-container icon-bg-img-1 lb" id="icon-bg-2">
+        <div id="iconProjectFrame" class="icon ch-item hide">
+            <div class="ch-info">
+                <h3>Проект</h3>
+                <p>Ииииха <a href="/">Сылка</a></p>
+            </div>
+            <div class="pulse"></div>
+        </div>
+    </div>
+
+    <!--Catalog icon-->
+    <div class="icon-bg-container icon-bg-img-1 rb-2" id="icon-bg-4b"></div>
+    <div class="icon-bg-container icon-bg-img-1 rb" id="icon-bg-4">
+        <div id="iconCatalogFrame" class="icon ch-item hide">
+            <div class="ch-info">
+                <h3>Каталог</h3>
+                <p>Ииииха <a href="/">Сылка</a></p>
+            </div>
+            <div class="pulse"></div>
+        </div>
+    </div>
+
+    <!-- icon GoToMain-->
+    <div id="iconBackToMain" class="icon-back-to-main hide">
+        <div class="pulse"></div>
+        <div class="ch-info">
+            <h3>Main menu</h3>
+            <p>Ииииха <a href="/">Сылка</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- Photo Gallery Frame Container-->
+<div class="frame-riper"><a id="photoFrame" href="#photoFrame" name="photoFrame"></a></div>
+<div class="frame-content-container bg-3">
+    <div class="title-content">Фотог-галерея</div>
+    <hr>
+    <div class="map-container">
+    <embed src="http://zmoe.ru/zmoe.swf" tppabs="http://zmoe.ru/zmoe.swf" menu="false"
+           quality="autohigh" bgcolor="#FFFFFF" width="100%"
+           height="100%" name="brb" align="center"
+           type="application/x-shockwave-flash"
+           pluginspage="http://www.macromedia.com/go/getflashplayer">
+        </div>
+</div>
+
+<!-- Projecting Frame Container-->
+<div class="frame-riper"><a id="projectFrame" href="#projectFrame" name="projectFrame"></a></div>
+<div class="frame-content-container bg-3">
+    <div class="title-content">Проектирование</div>
+    <hr>
+</div>
+
+<!-- Cut Frame Container-->
+<div class="frame-riper"><a id="cutFrame" href="#cutFrame" name="cutFrame"></a></div>
+<div class="frame-content-container bg-3">
+    <div class="title-content">Монтажные работы</div>
+    <hr>
+</div>
+
+<!-- Catalog Frame Container-->
+<div class="frame-riper"><a id="catalogFrame" href="#catalogFrame" name="catalogFrame"></a></div>
+<div class="frame-content-container bg-3">
+    <div class="title-content">Каталог товаров</div>
+    <hr>
+</div>
+
+<!-- End Page Frame Container-->
+<div class="frame-riper"><a id="endFrame" href="#endFrame" name="endFrame"></a></div>
+<div class="frame-content-container bg-3">
+    <div class="title-content">Карта</div>
+    <hr>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d587.7322643877451!2d27.552164745722084!3d53.89746486035124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1454233785854"
+                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
