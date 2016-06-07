@@ -10,12 +10,8 @@ body {
     background: url(../../img/icons-img/icon1.png) no-repeat;
     background-size: 70px 70px;
     text-align: center;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    top: 0; left: 0; bottom: 0; right: 0;
     margin: auto;
-    z-index: 100;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -29,10 +25,9 @@ body {
     position: fixed;
     width: 250px;
     height: 250px;
-    z-index: 0;
     background-size: 250px 250px;
     background-repeat: no-repeat;
-    -webkit-transition: all 0.2s;
+    /*-webkit-transition: all 0.2s;*/
 }
 
 .icon-bg-container.icon-bg-img-1 {
@@ -105,7 +100,6 @@ body {
     background-size: 250px 250px;
     top: 0;  left: 0;  bottom: 0;  right: 0;
     margin: auto;
-    z-index: 5;
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     border-radius: 999px;

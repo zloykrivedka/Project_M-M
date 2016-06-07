@@ -16,7 +16,7 @@ function moveIcons() {
     var iconPosition2;
     var iconPosition = iconPosition2 = (a / b) * 100;
 
-    console.log(iconPosition);
+    //console.log(iconPosition);
 
     if (iconPosition <= 10) {
         iconPosition = 10;
@@ -93,17 +93,17 @@ function moveIcons() {
 
     if (scrollTop >= $('#mainFrame').offset().top) {
         $('.icon-bg-container').css('position', 'absolute');
-        $('#iconBackToMain').removeClass('hide');
+        $('#go-to-main').removeClass('hide');
     } if (scrollTop < $('#mainFrame').offset().top) {
         $('.icon-bg-container').css('position', 'fixed');
-        $('#iconBackToMain').addClass('hide');
+        $('#go-to-main').addClass('hide');
     }
 }
 
 //Event push icons
 $(function () {
     $('#iconStartFrame').click(function () {
-        $.scrollTo('#mainFrame', 10000);
+        $.scrollTo('#mainFrame', 5000);
         $('#iconStartFrame').removeClass('show-icon');
         $('#title-start').removeClass('show-icon');
         $('#iconStartFrame').addClass('hide-icon');
@@ -126,7 +126,7 @@ $(function () {
         $.scrollTo('#photoFrame', 500);
     });
 
-    $('#iconBackToMain').click(function () {
+    $('#go-to-main').click(function () {
         $.scrollTo('#mainFrame', 300);
     });
 });

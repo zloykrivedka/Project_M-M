@@ -1,40 +1,141 @@
 
-.frame-container{
-    position: relative;
-    z-index: 0;
-    margin: auto;
+body{
+    margin: 0;
+    font-family: sans-serif;
 }
 
-.frame-content-container{
-    position: relative;
-    z-index: 0;
-    height: auto;
+.navBar {
+    position: fixed;
+    z-index: 1000;
+}
+
+.fixedTopNavBar{
+    height: 40pt;
+    width: 100%;
+    min-width: 400pt;
+    color: white;
+    background-color: #222222;
+}
+
+.fixedBottomNavBar{
+    right: 0; bottom: 0;
+    margin: 10px 10px 10px 10px;
     width: auto;
-    top: 0; left:0; right:0; bottom: 0;
-    margin: auto;
 }
 
-.frame-content-container hr{
+.navButton{
+
+}
+
+.navButton li{
+    display: inline-block;
+    list-style: none;
+    top: 0; bottom: 0;
+    font-size: 15pt;
+    height: 100%;
+}
+
+.navButton a{
+    text-decoration: none;
+    color: white;
+}
+
+.navButton a:hover{
+    opacity: 0.5;
+}
+
+.phoneNumber{
+    color: red;
+    padding-right: 10pt;
+    float: right;
+    font-size: 15pt;
+}
+
+aside{
+    position: fixed;
+    margin-top: 45pt;
+    margin-left: 1vw;
+    width: 7vw;
+    height: 7vw;
+    background: url(../img/icons-img/up.png) no-repeat;
+    background-size: 7vw 7vw;
+    cursor: pointer;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.mapContainer {
+    width: 60%;
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.addressContainer{
+    width: 30%;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    word-wrap: break-word; /* Перенос слов */
+    float: left;
+}
+.mapContainer iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 680px) {
+    .mapContainer{
+        display: block;
+        width: 100%;
+    }
+
+    .addressContainer{
+        display: block;
+        width: 100%
+    }
+}
+
+
+
+.container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
+    height: 100vh;
+}
+
+
+.animation-container{
+    position: relative;
+    margin: auto;
+    width: 95vw;
+    height: 100vh;
+}
+
+.content-container{
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50pt;
+    width: 80%;
+    /*max-width: 800pt;*/
+    overflow: hidden;
+    padding: 10pt;
+    /*height: 100vh;*/
+
+}
+
+.content-container hr{
     background-color: white;
     border: none;
     height: 5px;
     width: 70%;
-    margin: auto;
-    -webkit-margin-after: 0px;
-    -webkit-margin-before: 0px;
-}
-
-.map-container {
-    position: relative;
-    width: 70%; height: 70%;
-    left: 0; right: 0;  bottom: 0;  top: 30px;
-    margin: auto;
-
-}
-
-.frame-riper {
-    position: relative;
-    height: 50px;
+    margin-bottom: 10pt;
 }
 
 .bg-3{
@@ -44,7 +145,6 @@
 
 .title-start{
     position: absolute;
-    z-index: 3;
     width: 100%; height: auto;
     text-align: center;
     margin-top: 7%;
@@ -53,7 +153,6 @@
 }
 
 .title-content{
-    z-index: 3;
     width: 100%;
     height: auto;
     text-align: center;
@@ -62,9 +161,6 @@
     color: white;
 }
 
-.phone-number-container{
-    margin: 10px 10px 10px 10px;
-}
 
 @media (max-width: 1024px) {
     .title-start {
@@ -86,10 +182,3 @@
     }
 }
 
-/*Bootstratp adds*/
-.navbar-fixed-top-right,
-.navbar-fixed-bottom-right {
-    position: fixed;
-    right: 0;
-    z-index: 1030;
-}
