@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="title" content="Project M&M"/>
     <meta name="description" content="Vladimir's very first and ver own project."/>
+
+    <meta name="viewport" content="width=device-width">
+
     <link rel="image_src" href="http://mysite.com/mypic.jpg"/>
 
     <meta property="og:url" content="http://project-m.com"/>
@@ -15,14 +20,7 @@
 
     <title>Project M&M</title>
 
-    <!--Background zoom effect-->
-    <link rel="stylesheet" href="css/background/bg-zoom-effect.css" media="screen" type="text/css"/>
-
-    <!--Icon effects-->
-    <link rel="stylesheet" href="css/icon/icon.css"/>
-    <link rel="stylesheet" href="css/icon/icon-pulse-effect.css"/>
-    <link rel="stylesheet" href="css/main.css"/>
-    <link rel="stylesheet" href="css/gallery.css"/>
+    <link rel="stylesheet" href="css/main.css">
 
     <script type="text/javascript" src="js/jquery/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="js/jquery/jquery.scrollTo-1.4.3.1.js"></script>
@@ -32,61 +30,31 @@
     <!--Social nets-->
     <script type="text/javascript" src="js/ShareSocialNetwork/facebook-share.js" charset="windows-1251"></script>
     <script type="text/javascript" src="js/ShareSocialNetwork/twitter-share.js" charset="windows-1251"></script>
-
 </head>
 <body>
 
-<!--Background container-->
-<div class="bg-container" id="bg-container"></div>
-
-<!--Fixed bottom container for social network-->
-<nav class="navBar fixedBottomNavBar">
-    <a onclick="FBShare()">
-        <img class="icon-social-network" alt="Facebook-icon" src="img/icons-img/facebook-icon.png"/>
-    </a>
-
-    <a href="https://twitter.com/intent/tweet?text=Look at our project!&amp;url=http://project-m.com&amp;hashtags=ProjectM,loveme">
-        <img class="icon-social-network" alt="Twitter-icon" src="img/icons-img/twitter-icon.png"/>
-    </a>
-
-    <a href="http://vk.com/share.php?url=http://project-m.com" target="_blank">
-        <img class="icon-social-network" alt="Vk-icon" src="img/icons-img/vk-icon.png"/>
-    </a>
-</nav>
+<div class="bgContainer"></div>
 
 <!--Fixed top menu-->
 <nav class="navBar fixedTopNavBar">
-    <header>
-        <ul class="navButton">
-            <li><a href="#brend">Brand</a></li>
-            <li><a href="#brend">Home</a></li>
-            <li><a href="#brend">About</a></li>
-            <li class="phoneNumber">Phone number: <a href="tel:+375291138017">+37529 113-80-17</a></li>
-        </ul>
-    </header>
-
+    <ul class="navBarMenu">
+        <li class="navBarMenuButton brendButton"><a href="#brend">Материалы и Механизмы</a></li>
+        <li class="navBarMenuButton"><a href="#brend">Ппартнёры</a></li>
+        <li class="navBarMenuButton"><a href="#brend">Контакты</a></li>
+        <li class="navBarMenuButton phoneNumberButton"><img src="img/icons-img/trubka.png"> <a href="tel:+375291138017"> +37529 113-80-17</a></li>
+    </ul>
 </nav>
 
-<aside id="go-to-main" class="hide"></aside>
+<div class="animationWrapper">
 
-<section id="animation">
-
-    <!-- Start Frame Container-->
-    <div class="container" id="main-frame-cantainer">
-        <a id="startFrame" name="startFrame" href="#startFrame"></a>
-        <div class="title-start" id="title-start">Материалы и Механизмы</div>
-        <div id="iconStartFrame" class="icon-start ch-item pos-ab">
+    <div class="startAnimationContainer" id="startAnimationContainer">
+        <h1 class="titleStart" id="title-start">Материалы и Механизмы</h1>
+        <div id="iconStartAnimation" class="icon-start">
             <div class="pulse"></div>
         </div>
     </div>
 
-    <!-- Mid Frame Container-->
-    <div class="animation-container"><a id="midFrame" href="#midFrame" name="midFrame"></a></div>
-
-    <!-- End Frame Container-->
-    <div class="container">
-        <a id="mainFrame" href="#mainFrame" name="mainFrame"></a>
-
+    <div class="endAnimationContainer" id="endAnimationContainer">
         <!--Portfolio icon-->
         <div class="icon-bg-container icon-bg-img-1 lt-2 " id="icon-bg-1b"></div>
         <div class="icon-bg-container icon-bg-img-1 lt " id="icon-bg-1">
@@ -134,92 +102,89 @@
                 <div class="pulse"></div>
             </div>
         </div>
-
-
     </div>
+</div>
 
-</section>
-
-<section id="content">
-     <!--Photo Gallery Frame Container-->
+<div class="contentWrapper">
+    <!--Photo Gallery Frame Container-->
     <div id="photoFrame" class="content-container bg-3">
         <div class="title-content">Фотог-галерея</div>
         <hr>
-        <div class="clearfix mosaicflow" style="visibility: visible;">
-            <div style="visibility: hidden; width: 100%;"></div>
+        <!--<div class="clearfix mosaicflow" style="visibility: visible;">-->
+            <!--<div style="visibility: hidden; width: 100%;"></div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="300"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-20_5D_1287_Artem_Sapegin.jpg" alt="">
-                <p>Dessi the Dachshund</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="300"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-20_5D_1287_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Dessi the Dachshund</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="200"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-24_5D_2066_Artem_Sapegin.jpg" alt="">
-                <p>Tsiri on Baltic Sea</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="200"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-24_5D_2066_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Tsiri on Baltic Sea</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="300"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-10-21_5D_3178_Artem_Sapegin.jpg" alt="">
-                <p>Ciyar the Saluki</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="300"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-10-21_5D_3178_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Ciyar the Saluki</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="200"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-26_5D_2551_Artem_Sapegin.jpg" alt="">
-                <p>Tsiri Having Fun by the Sea</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="200"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-26_5D_2551_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Tsiri Having Fun by the Sea</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="200"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-26_5D_2323_Artem_Sapegin.jpg" alt="">
-                <p>Dessi Meets the Sea</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="200"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-26_5D_2323_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Dessi Meets the Sea</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="200"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-05-19_5D_9670_Artem_Sapegin.jpg" alt="">
-                <p>Tsiri the Saluki</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="200"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-05-19_5D_9670_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Tsiri the Saluki</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="200"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-20_5D_1165_Artem_Sapegin.jpg" alt="">
-                <p>Dessi on a Waterfall</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="200"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-20_5D_1165_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Dessi on a Waterfall</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="200"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2011-05-28_5D_4035_Artem_Sapegin.jpg" alt="">
-                <p>Dessi in Dandelion Field</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="200"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2011-05-28_5D_4035_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Dessi in Dandelion Field</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="300"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-12-09_5D_3758_Artem_Sapegin.jpg" alt="">
-                <p>New Year Postcard from Tsiri and Ciyar</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="300"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-12-09_5D_3758_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>New Year Postcard from Tsiri and Ciyar</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="300"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-10-21_5D_3422_Artem_Sapegin.jpg" alt="">
-                <p>Beautiful Afghan Hound Girl</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="300"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-10-21_5D_3422_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Beautiful Afghan Hound Girl</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="300"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-10-21_5D_3414_Artem_Sapegin.jpg" alt="">
-                <p>Running Ciyar and Afgan Girl</p>
-            </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="300"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-10-21_5D_3414_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Running Ciyar and Afgan Girl</p>-->
+            <!--</div>-->
 
-            <div class="mosaicflow__item">
-                <img width="300" height="300"
-                     src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-26_5D_2378_Artem_Sapegin.jpg" alt="">
-                <p>Dessi Walking on a Sea Shore</p>
-            </div>
-        </div>
+            <!--<div class="mosaicflow__item">-->
+                <!--<img width="300" height="300"-->
+                     <!--src="http://sapegin.github.com/jquery.mosaicflow/img/2012-08-26_5D_2378_Artem_Sapegin.jpg" alt="">-->
+                <!--<p>Dessi Walking on a Sea Shore</p>-->
+            <!--</div>-->
+        <!--</div>-->
     </div>
 
     <!-- Projecting Frame Container-->
@@ -239,23 +204,22 @@
         <div class="title-content">Каталог товаров</div>
         <hr>
     </div>
+</div>
 
-    <!-- End Page Frame Container-->
-    <div class="content-container bg-3" id="endFrame">
-        <div class="addressContainer">
-            <p>
-                Ул. Леонида Беды 4к1, Офис 609а<br>
-                Тел: +37529 113-80-17, +37529 892-44-42
-            </p>
-        </div>
-        <div class="mapContainer">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d587.7322643877451!2d27.552164745722084!3d53.89746486035124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1454233785854" allowfullscreen></iframe>
-        </div>
+<footer>
+
+    <!--<div class="mapContainer">-->
+
+    <!--</div>-->
+    <div class="footerWrapper">
+        <p>
+            Ул. Леонида Беды 4к1, Офис 609а<br>
+            Тел: +37529 113-80-17, +37529 892-44-42
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d587.7322643877451!2d27.552164745722084!3d53.89746486035124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1454233785854"
+                allowfullscreen></iframe>
     </div>
-</section>
+</footer>
 
 </body>
 </html>
-
-
-

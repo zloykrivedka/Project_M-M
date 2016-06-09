@@ -1,0 +1,29 @@
+
+.titleStart {
+    position: relative;
+    text-align: center;
+    margin: 70px auto;
+    font-size: 70px;
+    color: black;
+}
+
+.title-content{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 0;
+    font-size: 50px;
+    color: white;
+}
+
+
+@media (max-width: 1024px) {
+    .titleStart {
+        font-size: 50px;
+    }
+
+    .title-content {
+        font-size: 30px;
+    }
+}
+
