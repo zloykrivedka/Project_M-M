@@ -1,0 +1,27 @@
+
+.bgContainer {
+    position:fixed;
+    top:0; bottom: 0; left: 0; right: 0;
+    z-index:0;
+    width: 100%;
+    /*padding-top:50%;*/
+    background: url(../img/bg-main.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.animationWrapper {
+    margin: 50px auto;
+}
+
+.startAnimationContainer{
+    margin: 0 auto;
+}
+
+.endAnimationContainer{
+    position: relative;
+    margin: 1500px auto 0 auto;
+}
+

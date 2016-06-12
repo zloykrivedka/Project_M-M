@@ -1,0 +1,43 @@
+.container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
+    height: 100vh;
+}
+
+.content-container{
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    height: 800px;
+    margin: 50px auto 50px;
+    padding: 20px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.content-container hr{
+    background-color: white;
+    border: none;
+    height: 5px;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 680px) {
+
+    .animationWrapper{
+        display: none;
+    }
+
+    .mapContainer{
+        display: block;
+        width: 100%;
+    }
+
+    .addressContainer{
+        display: block;
+        width: 100%
+    }
+}
